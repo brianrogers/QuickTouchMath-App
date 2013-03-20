@@ -26,6 +26,7 @@
 		D319C80D117AD45F004C918A /* greenbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D319C80B117AD45F004C918A /* greenbutton.png */; };
 		D319C8AF11815E29004C918A /* MainMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = D319C8AD11815E29004C918A /* MainMenuView.m */; };
 		D319C8B011815E29004C918A /* MainMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D319C8AE11815E29004C918A /* MainMenuView.xib */; };
+		D31C948116F94CCB0086FDA0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D31C948016F94CCB0086FDA0 /* Default-568h@2x.png */; };
 		D32F3CE0128665E400D96D01 /* NSMutableArray_Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F3CDF128665E400D96D01 /* NSMutableArray_Shuffling.m */; };
 		D3301CC012EA81D50095E3F0 /* qtm-blankPopup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301CBE12EA81D50095E3F0 /* qtm-blankPopup@2x.png */; };
 		D3301CC112EA81D50095E3F0 /* qtm-touchtostart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301CBF12EA81D50095E3F0 /* qtm-touchtostart@2x.png */; };
@@ -105,6 +106,7 @@
 		D319C8AC11815E29004C918A /* MainMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuView.h; path = Classes/MainMenuView.h; sourceTree = "<group>"; };
 		D319C8AD11815E29004C918A /* MainMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuView.m; path = Classes/MainMenuView.m; sourceTree = "<group>"; };
 		D319C8AE11815E29004C918A /* MainMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenuView.xib; path = Classes/MainMenuView.xib; sourceTree = "<group>"; };
+		D31C948016F94CCB0086FDA0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D32F3CDE128665E400D96D01 /* NSMutableArray_Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArray_Shuffling.h; sourceTree = "<group>"; };
 		D32F3CDF128665E400D96D01 /* NSMutableArray_Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArray_Shuffling.m; sourceTree = "<group>"; };
 		D3301CBE12EA81D50095E3F0 /* qtm-blankPopup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-blankPopup@2x.png"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				D31C948016F94CCB0086FDA0 /* Default-568h@2x.png */,
 				D35DD4A71329DA5900DB2C11 /* Default@2x.png */,
 				D35DD4A51329DA3E00DB2C11 /* Default.png */,
 				D3DEA06B12C042A500DC6427 /* DataClasses */,
@@ -464,6 +467,7 @@
 				D37EB60912ED32FD00C7DF1F /* Icon.png in Resources */,
 				D35DD4A61329DA3E00DB2C11 /* Default.png in Resources */,
 				D35DD4A81329DA5900DB2C11 /* Default@2x.png in Resources */,
+				D31C948116F94CCB0086FDA0 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,16 +504,17 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Brian Rogers (8F48BKE846)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = QuickTouchMath_Prefix.pch;
 				INFOPLIST_FILE = "QuickTouchMath-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = QuickTouchMath;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4B88E9E6-6AC8-49EE-A7F4-916CEE76EE8B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -524,9 +529,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = QuickTouchMath_Prefix.pch;
 				INFOPLIST_FILE = "QuickTouchMath-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = QuickTouchMath;
-				SDKROOT = iphonesimulator3.2;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -540,7 +546,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos4.2;
@@ -557,7 +563,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
@@ -568,14 +574,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Brian Rogers";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4CEA9D8F-91C7-4DAB-A77F-82CD24A97D24";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Distribution;
@@ -585,13 +591,15 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Brian Rogers";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = QuickTouchMath_Prefix.pch;
 				INFOPLIST_FILE = "QuickTouchMath-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = QuickTouchMath;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
