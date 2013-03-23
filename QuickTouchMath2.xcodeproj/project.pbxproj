@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D391C8E416C8BDCB00827B51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E316C8BDCB00827B51 /* UIKit.framework */; };
+		D391C8E616C8BDCB00827B51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E516C8BDCB00827B51 /* Foundation.framework */; };
+		D391C8E816C8BDCB00827B51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E716C8BDCB00827B51 /* CoreGraphics.framework */; };
+		D391C8EE16C8BDCB00827B51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D391C8EC16C8BDCB00827B51 /* InfoPlist.strings */; };
+		D391C8F016C8BDCB00827B51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D391C8EF16C8BDCB00827B51 /* main.m */; };
+		D391C8F416C8BDCB00827B51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D391C8F316C8BDCB00827B51 /* AppDelegate.m */; };
+		D391C8F616C8BDCB00827B51 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C8F516C8BDCB00827B51 /* Default.png */; };
+		D391C8F816C8BDCB00827B51 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C8F716C8BDCB00827B51 /* Default@2x.png */; };
+		D391C8FA16C8BDCB00827B51 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C8F916C8BDCB00827B51 /* Default-568h@2x.png */; };
+		D391C8FD16C8BDCB00827B51 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D391C8FB16C8BDCB00827B51 /* MainStoryboard_iPhone.storyboard */; };
+		D391C90016C8BDCC00827B51 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D391C8FE16C8BDCB00827B51 /* MainStoryboard_iPad.storyboard */; };
+		D391C90316C8BDCC00827B51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D391C90216C8BDCC00827B51 /* ViewController.m */; };
+		D391C90B16C8BDCC00827B51 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C90A16C8BDCC00827B51 /* SenTestingKit.framework */; };
+		D391C90C16C8BDCC00827B51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E316C8BDCB00827B51 /* UIKit.framework */; };
+		D391C90D16C8BDCC00827B51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E516C8BDCB00827B51 /* Foundation.framework */; };
+		D391C91516C8BDCC00827B51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D391C91316C8BDCC00827B51 /* InfoPlist.strings */; };
+		D391C91816C8BDCC00827B51 /* QuickTouchMath2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D391C91716C8BDCC00827B51 /* QuickTouchMath2Tests.m */; };
+		D391C92216C8BE8F00827B51 /* infoText.html in Resources */ = {isa = PBXBuildFile; fileRef = D391C92116C8BE8F00827B51 /* infoText.html */; };
+		D391C93E16C9D3C600827B51 /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92316C9D3C600827B51 /* Icon-iPad.png */; };
+		D391C93F16C9D3C600827B51 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D391C92416C9D3C600827B51 /* config.plist */; };
+		D391C94016C9D3C600827B51 /* qtm-navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92516C9D3C600827B51 /* qtm-navbar.png */; };
+		D391C94116C9D3C600827B51 /* qtm-blankbg.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92616C9D3C600827B51 /* qtm-blankbg.png */; };
+		D391C94216C9D3C600827B51 /* qtm-menubg.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92716C9D3C600827B51 /* qtm-menubg.png */; };
+		D391C94316C9D3C600827B51 /* qtm-menuadd.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92816C9D3C600827B51 /* qtm-menuadd.png */; };
+		D391C94416C9D3C600827B51 /* qtm-menusub.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92916C9D3C600827B51 /* qtm-menusub.png */; };
+		D391C94516C9D3C600827B51 /* qtm-menumul.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92A16C9D3C600827B51 /* qtm-menumul.png */; };
+		D391C94616C9D3C600827B51 /* qtm-menudiv.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92B16C9D3C600827B51 /* qtm-menudiv.png */; };
+		D391C94716C9D3C600827B51 /* qtm-gamebg.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92C16C9D3C600827B51 /* qtm-gamebg.png */; };
+		D391C94816C9D3C600827B51 /* qtm-usercell.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92D16C9D3C600827B51 /* qtm-usercell.png */; };
+		D391C94916C9D3C600827B51 /* qtm-gamebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92E16C9D3C600827B51 /* qtm-gamebutton.png */; };
+		D391C94A16C9D3C600827B51 /* Icon-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92F16C9D3C600827B51 /* Icon-iPad@2x.png */; };
+		D391C94B16C9D3C600827B51 /* qtm-gamebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93016C9D3C600827B51 /* qtm-gamebutton@2x.png */; };
+		D391C94C16C9D3C600827B51 /* qtm-usercell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93116C9D3C600827B51 /* qtm-usercell@2x.png */; };
+		D391C94D16C9D3C600827B51 /* qtm-gamebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93216C9D3C600827B51 /* qtm-gamebg@2x.png */; };
+		D391C94E16C9D3C600827B51 /* qtm-menudiv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93316C9D3C600827B51 /* qtm-menudiv@2x.png */; };
+		D391C94F16C9D3C600827B51 /* qtm-menumul@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93416C9D3C600827B51 /* qtm-menumul@2x.png */; };
+		D391C95016C9D3C600827B51 /* qtm-menusub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93516C9D3C600827B51 /* qtm-menusub@2x.png */; };
+		D391C95116C9D3C600827B51 /* qtm-menuadd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93616C9D3C600827B51 /* qtm-menuadd@2x.png */; };
+		D391C95216C9D3C600827B51 /* qtm-menubg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93716C9D3C600827B51 /* qtm-menubg@2x.png */; };
+		D391C95316C9D3C600827B51 /* qtm-blankbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93816C9D3C600827B51 /* qtm-blankbg@2x.png */; };
+		D391C95416C9D3C600827B51 /* qtm-navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93916C9D3C600827B51 /* qtm-navbar@2x.png */; };
+		D391C95516C9D3C600827B51 /* qtm-touchtostart.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93A16C9D3C600827B51 /* qtm-touchtostart.png */; };
+		D391C95616C9D3C600827B51 /* qtm-blankPopup.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93B16C9D3C600827B51 /* qtm-blankPopup.png */; };
+		D391C95716C9D3C600827B51 /* qtm-blankPopup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93C16C9D3C600827B51 /* qtm-blankPopup@2x.png */; };
+		D391C95816C9D3C600827B51 /* qtm-touchtostart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C93D16C9D3C600827B51 /* qtm-touchtostart@2x.png */; };
+		D391C95B16C9D3FD00827B51 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C95A16C9D3FD00827B51 /* Icon.png */; };
+		D391C95D16C9D46E00827B51 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C95C16C9D46E00827B51 /* Icon@2x.png */; };
+		D391C95F16C9D50500827B51 /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C95E16C9D50500827B51 /* Icon-iPad.png */; };
+		D391C96116C9D53900827B51 /* Icon-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C96016C9D53900827B51 /* Icon-iPad@2x.png */; };
+		D391C96316C9D5E500827B51 /* math-correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = D391C96216C9D5E400827B51 /* math-correct.wav */; };
+		D391C96516C9D5EE00827B51 /* math-wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = D391C96416C9D5ED00827B51 /* math-wrong.wav */; };
+		D391C96B16C9D66B00827B51 /* info-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C96616C9D66600827B51 /* info-bg@2x.png */; };
+		D391C96C16C9D66B00827B51 /* user-cell-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C96716C9D66600827B51 /* user-cell-bg@2x.png */; };
+		D391C96D16C9D66B00827B51 /* main-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C96816C9D66800827B51 /* main-bg@2x.png */; };
+		D391C96E16C9D66B00827B51 /* greenbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C96916C9D66900827B51 /* greenbutton.png */; };
+		D391C96F16C9D66B00827B51 /* redbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C96A16C9D66B00827B51 /* redbutton.png */; };
+		D391C97216CA085200827B51 /* MainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = D391C97116CA085100827B51 /* MainNavController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D391C90E16C8BDCC00827B51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D391C8D816C8BDCB00827B51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D391C8DF16C8BDCB00827B51;
+			remoteInfo = QuickTouchMath2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D391C8E016C8BDCB00827B51 /* QuickTouchMath2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickTouchMath2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D391C8E316C8BDCB00827B51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D391C8E516C8BDCB00827B51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D391C8E716C8BDCB00827B51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D391C8EB16C8BDCB00827B51 /* QuickTouchMath2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickTouchMath2-Info.plist"; sourceTree = "<group>"; };
+		D391C8ED16C8BDCB00827B51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D391C8EF16C8BDCB00827B51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D391C8F116C8BDCB00827B51 /* QuickTouchMath2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickTouchMath2-Prefix.pch"; sourceTree = "<group>"; };
+		D391C8F216C8BDCB00827B51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D391C8F316C8BDCB00827B51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D391C8F516C8BDCB00827B51 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D391C8F716C8BDCB00827B51 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D391C8F916C8BDCB00827B51 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D391C8FC16C8BDCB00827B51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		D391C8FF16C8BDCB00827B51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		D391C90116C8BDCC00827B51 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D391C90216C8BDCC00827B51 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D391C90916C8BDCC00827B51 /* QuickTouchMath2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickTouchMath2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D391C90A16C8BDCC00827B51 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D391C91216C8BDCC00827B51 /* QuickTouchMath2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickTouchMath2Tests-Info.plist"; sourceTree = "<group>"; };
+		D391C91416C8BDCC00827B51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D391C91616C8BDCC00827B51 /* QuickTouchMath2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickTouchMath2Tests.h; sourceTree = "<group>"; };
+		D391C91716C8BDCC00827B51 /* QuickTouchMath2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickTouchMath2Tests.m; sourceTree = "<group>"; };
+		D391C92116C8BE8F00827B51 /* infoText.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = infoText.html; sourceTree = "<group>"; };
+		D391C92316C9D3C600827B51 /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
+		D391C92416C9D3C600827B51 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		D391C92516C9D3C600827B51 /* qtm-navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-navbar.png"; sourceTree = "<group>"; };
+		D391C92616C9D3C600827B51 /* qtm-blankbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-blankbg.png"; sourceTree = "<group>"; };
+		D391C92716C9D3C600827B51 /* qtm-menubg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menubg.png"; sourceTree = "<group>"; };
+		D391C92816C9D3C600827B51 /* qtm-menuadd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menuadd.png"; sourceTree = "<group>"; };
+		D391C92916C9D3C600827B51 /* qtm-menusub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menusub.png"; sourceTree = "<group>"; };
+		D391C92A16C9D3C600827B51 /* qtm-menumul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menumul.png"; sourceTree = "<group>"; };
+		D391C92B16C9D3C600827B51 /* qtm-menudiv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menudiv.png"; sourceTree = "<group>"; };
+		D391C92C16C9D3C600827B51 /* qtm-gamebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-gamebg.png"; sourceTree = "<group>"; };
+		D391C92D16C9D3C600827B51 /* qtm-usercell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-usercell.png"; sourceTree = "<group>"; };
+		D391C92E16C9D3C600827B51 /* qtm-gamebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-gamebutton.png"; sourceTree = "<group>"; };
+		D391C92F16C9D3C600827B51 /* Icon-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad@2x.png"; sourceTree = "<group>"; };
+		D391C93016C9D3C600827B51 /* qtm-gamebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-gamebutton@2x.png"; sourceTree = "<group>"; };
+		D391C93116C9D3C600827B51 /* qtm-usercell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-usercell@2x.png"; sourceTree = "<group>"; };
+		D391C93216C9D3C600827B51 /* qtm-gamebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-gamebg@2x.png"; sourceTree = "<group>"; };
+		D391C93316C9D3C600827B51 /* qtm-menudiv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menudiv@2x.png"; sourceTree = "<group>"; };
+		D391C93416C9D3C600827B51 /* qtm-menumul@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menumul@2x.png"; sourceTree = "<group>"; };
+		D391C93516C9D3C600827B51 /* qtm-menusub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menusub@2x.png"; sourceTree = "<group>"; };
+		D391C93616C9D3C600827B51 /* qtm-menuadd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menuadd@2x.png"; sourceTree = "<group>"; };
+		D391C93716C9D3C600827B51 /* qtm-menubg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menubg@2x.png"; sourceTree = "<group>"; };
+		D391C93816C9D3C600827B51 /* qtm-blankbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-blankbg@2x.png"; sourceTree = "<group>"; };
+		D391C93916C9D3C600827B51 /* qtm-navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-navbar@2x.png"; sourceTree = "<group>"; };
+		D391C93A16C9D3C600827B51 /* qtm-touchtostart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-touchtostart.png"; sourceTree = "<group>"; };
+		D391C93B16C9D3C600827B51 /* qtm-blankPopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-blankPopup.png"; sourceTree = "<group>"; };
+		D391C93C16C9D3C600827B51 /* qtm-blankPopup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-blankPopup@2x.png"; sourceTree = "<group>"; };
+		D391C93D16C9D3C600827B51 /* qtm-touchtostart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-touchtostart@2x.png"; sourceTree = "<group>"; };
+		D391C95A16C9D3FD00827B51 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D391C95C16C9D46E00827B51 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		D391C95E16C9D50500827B51 /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
+		D391C96016C9D53900827B51 /* Icon-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad@2x.png"; sourceTree = "<group>"; };
+		D391C96216C9D5E400827B51 /* math-correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "math-correct.wav"; sourceTree = "<group>"; };
+		D391C96416C9D5ED00827B51 /* math-wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "math-wrong.wav"; sourceTree = "<group>"; };
+		D391C96616C9D66600827B51 /* info-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-bg@2x.png"; sourceTree = "<group>"; };
+		D391C96716C9D66600827B51 /* user-cell-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-cell-bg@2x.png"; sourceTree = "<group>"; };
+		D391C96816C9D66800827B51 /* main-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-bg@2x.png"; sourceTree = "<group>"; };
+		D391C96916C9D66900827B51 /* greenbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenbutton.png; sourceTree = "<group>"; };
+		D391C96A16C9D66B00827B51 /* redbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redbutton.png; sourceTree = "<group>"; };
+		D391C97016CA085000827B51 /* MainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavController.h; sourceTree = "<group>"; };
+		D391C97116CA085100827B51 /* MainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D391C8DD16C8BDCB00827B51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D391C8E416C8BDCB00827B51 /* UIKit.framework in Frameworks */,
+				D391C8E616C8BDCB00827B51 /* Foundation.framework in Frameworks */,
+				D391C8E816C8BDCB00827B51 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D391C90516C8BDCC00827B51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D391C90B16C8BDCC00827B51 /* SenTestingKit.framework in Frameworks */,
+				D391C90C16C8BDCC00827B51 /* UIKit.framework in Frameworks */,
+				D391C90D16C8BDCC00827B51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D391C8D716C8BDCB00827B51 = {
+			isa = PBXGroup;
+			children = (
+				D391C96016C9D53900827B51 /* Icon-iPad@2x.png */,
+				D391C95E16C9D50500827B51 /* Icon-iPad.png */,
+				D391C95C16C9D46E00827B51 /* Icon@2x.png */,
+				D391C95A16C9D3FD00827B51 /* Icon.png */,
+				D391C8E916C8BDCB00827B51 /* QuickTouchMath2 */,
+				D391C91016C8BDCC00827B51 /* QuickTouchMath2Tests */,
+				D391C8E216C8BDCB00827B51 /* Frameworks */,
+				D391C8E116C8BDCB00827B51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D391C8E116C8BDCB00827B51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D391C8E016C8BDCB00827B51 /* QuickTouchMath2.app */,
+				D391C90916C8BDCC00827B51 /* QuickTouchMath2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D391C8E216C8BDCB00827B51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D391C8E316C8BDCB00827B51 /* UIKit.framework */,
+				D391C8E516C8BDCB00827B51 /* Foundation.framework */,
+				D391C8E716C8BDCB00827B51 /* CoreGraphics.framework */,
+				D391C90A16C8BDCC00827B51 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D391C8E916C8BDCB00827B51 /* QuickTouchMath2 */ = {
+			isa = PBXGroup;
+			children = (
+				D391C95916C9D3D000827B51 /* Resources */,
+				D391C8F216C8BDCB00827B51 /* AppDelegate.h */,
+				D391C8F316C8BDCB00827B51 /* AppDelegate.m */,
+				D391C8FB16C8BDCB00827B51 /* MainStoryboard_iPhone.storyboard */,
+				D391C8FE16C8BDCB00827B51 /* MainStoryboard_iPad.storyboard */,
+				D391C90116C8BDCC00827B51 /* ViewController.h */,
+				D391C90216C8BDCC00827B51 /* ViewController.m */,
+				D391C8EA16C8BDCB00827B51 /* Supporting Files */,
+				D391C97016CA085000827B51 /* MainNavController.h */,
+				D391C97116CA085100827B51 /* MainNavController.m */,
+			);
+			path = QuickTouchMath2;
+			sourceTree = "<group>";
+		};
+		D391C8EA16C8BDCB00827B51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D391C8EB16C8BDCB00827B51 /* QuickTouchMath2-Info.plist */,
+				D391C8EC16C8BDCB00827B51 /* InfoPlist.strings */,
+				D391C8EF16C8BDCB00827B51 /* main.m */,
+				D391C8F116C8BDCB00827B51 /* QuickTouchMath2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D391C91016C8BDCC00827B51 /* QuickTouchMath2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D391C91616C8BDCC00827B51 /* QuickTouchMath2Tests.h */,
+				D391C91716C8BDCC00827B51 /* QuickTouchMath2Tests.m */,
+				D391C91116C8BDCC00827B51 /* Supporting Files */,
+			);
+			path = QuickTouchMath2Tests;
+			sourceTree = "<group>";
+		};
+		D391C91116C8BDCC00827B51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D391C91216C8BDCC00827B51 /* QuickTouchMath2Tests-Info.plist */,
+				D391C91316C8BDCC00827B51 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D391C95916C9D3D000827B51 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D391C96616C9D66600827B51 /* info-bg@2x.png */,
+				D391C96716C9D66600827B51 /* user-cell-bg@2x.png */,
+				D391C96816C9D66800827B51 /* main-bg@2x.png */,
+				D391C96916C9D66900827B51 /* greenbutton.png */,
+				D391C96A16C9D66B00827B51 /* redbutton.png */,
+				D391C96416C9D5ED00827B51 /* math-wrong.wav */,
+				D391C96216C9D5E400827B51 /* math-correct.wav */,
+				D391C92316C9D3C600827B51 /* Icon-iPad.png */,
+				D391C92416C9D3C600827B51 /* config.plist */,
+				D391C92516C9D3C600827B51 /* qtm-navbar.png */,
+				D391C92616C9D3C600827B51 /* qtm-blankbg.png */,
+				D391C92716C9D3C600827B51 /* qtm-menubg.png */,
+				D391C92816C9D3C600827B51 /* qtm-menuadd.png */,
+				D391C92916C9D3C600827B51 /* qtm-menusub.png */,
+				D391C92A16C9D3C600827B51 /* qtm-menumul.png */,
+				D391C92B16C9D3C600827B51 /* qtm-menudiv.png */,
+				D391C92C16C9D3C600827B51 /* qtm-gamebg.png */,
+				D391C92D16C9D3C600827B51 /* qtm-usercell.png */,
+				D391C92E16C9D3C600827B51 /* qtm-gamebutton.png */,
+				D391C92F16C9D3C600827B51 /* Icon-iPad@2x.png */,
+				D391C93016C9D3C600827B51 /* qtm-gamebutton@2x.png */,
+				D391C93116C9D3C600827B51 /* qtm-usercell@2x.png */,
+				D391C93216C9D3C600827B51 /* qtm-gamebg@2x.png */,
+				D391C93316C9D3C600827B51 /* qtm-menudiv@2x.png */,
+				D391C93416C9D3C600827B51 /* qtm-menumul@2x.png */,
+				D391C93516C9D3C600827B51 /* qtm-menusub@2x.png */,
+				D391C93616C9D3C600827B51 /* qtm-menuadd@2x.png */,
+				D391C93716C9D3C600827B51 /* qtm-menubg@2x.png */,
+				D391C93816C9D3C600827B51 /* qtm-blankbg@2x.png */,
+				D391C93916C9D3C600827B51 /* qtm-navbar@2x.png */,
+				D391C93A16C9D3C600827B51 /* qtm-touchtostart.png */,
+				D391C93B16C9D3C600827B51 /* qtm-blankPopup.png */,
+				D391C93C16C9D3C600827B51 /* qtm-blankPopup@2x.png */,
+				D391C93D16C9D3C600827B51 /* qtm-touchtostart@2x.png */,
+				D391C8F516C8BDCB00827B51 /* Default.png */,
+				D391C8F716C8BDCB00827B51 /* Default@2x.png */,
+				D391C8F916C8BDCB00827B51 /* Default-568h@2x.png */,
+				D391C92116C8BE8F00827B51 /* infoText.html */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D391C8DF16C8BDCB00827B51 /* QuickTouchMath2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D391C91B16C8BDCC00827B51 /* Build configuration list for PBXNativeTarget "QuickTouchMath2" */;
+			buildPhases = (
+				D391C8DC16C8BDCB00827B51 /* Sources */,
+				D391C8DD16C8BDCB00827B51 /* Frameworks */,
+				D391C8DE16C8BDCB00827B51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickTouchMath2;
+			productName = QuickTouchMath2;
+			productReference = D391C8E016C8BDCB00827B51 /* QuickTouchMath2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D391C90816C8BDCC00827B51 /* QuickTouchMath2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D391C91E16C8BDCC00827B51 /* Build configuration list for PBXNativeTarget "QuickTouchMath2Tests" */;
+			buildPhases = (
+				D391C90416C8BDCC00827B51 /* Sources */,
+				D391C90516C8BDCC00827B51 /* Frameworks */,
+				D391C90616C8BDCC00827B51 /* Resources */,
+				D391C90716C8BDCC00827B51 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D391C90F16C8BDCC00827B51 /* PBXTargetDependency */,
+			);
+			name = QuickTouchMath2Tests;
+			productName = QuickTouchMath2Tests;
+			productReference = D391C90916C8BDCC00827B51 /* QuickTouchMath2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D391C8D816C8BDCB00827B51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Brian Rogers";
+			};
+			buildConfigurationList = D391C8DB16C8BDCB00827B51 /* Build configuration list for PBXProject "QuickTouchMath2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D391C8D716C8BDCB00827B51;
+			productRefGroup = D391C8E116C8BDCB00827B51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D391C8DF16C8BDCB00827B51 /* QuickTouchMath2 */,
+				D391C90816C8BDCC00827B51 /* QuickTouchMath2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D391C8DE16C8BDCB00827B51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D391C8EE16C8BDCB00827B51 /* InfoPlist.strings in Resources */,
+				D391C8F616C8BDCB00827B51 /* Default.png in Resources */,
+				D391C8F816C8BDCB00827B51 /* Default@2x.png in Resources */,
+				D391C8FA16C8BDCB00827B51 /* Default-568h@2x.png in Resources */,
+				D391C8FD16C8BDCB00827B51 /* MainStoryboard_iPhone.storyboard in Resources */,
+				D391C90016C8BDCC00827B51 /* MainStoryboard_iPad.storyboard in Resources */,
+				D391C92216C8BE8F00827B51 /* infoText.html in Resources */,
+				D391C93E16C9D3C600827B51 /* Icon-iPad.png in Resources */,
+				D391C93F16C9D3C600827B51 /* config.plist in Resources */,
+				D391C94016C9D3C600827B51 /* qtm-navbar.png in Resources */,
+				D391C94116C9D3C600827B51 /* qtm-blankbg.png in Resources */,
+				D391C94216C9D3C600827B51 /* qtm-menubg.png in Resources */,
+				D391C94316C9D3C600827B51 /* qtm-menuadd.png in Resources */,
+				D391C94416C9D3C600827B51 /* qtm-menusub.png in Resources */,
+				D391C94516C9D3C600827B51 /* qtm-menumul.png in Resources */,
+				D391C94616C9D3C600827B51 /* qtm-menudiv.png in Resources */,
+				D391C94716C9D3C600827B51 /* qtm-gamebg.png in Resources */,
+				D391C94816C9D3C600827B51 /* qtm-usercell.png in Resources */,
+				D391C94916C9D3C600827B51 /* qtm-gamebutton.png in Resources */,
+				D391C94A16C9D3C600827B51 /* Icon-iPad@2x.png in Resources */,
+				D391C94B16C9D3C600827B51 /* qtm-gamebutton@2x.png in Resources */,
+				D391C94C16C9D3C600827B51 /* qtm-usercell@2x.png in Resources */,
+				D391C94D16C9D3C600827B51 /* qtm-gamebg@2x.png in Resources */,
+				D391C94E16C9D3C600827B51 /* qtm-menudiv@2x.png in Resources */,
+				D391C94F16C9D3C600827B51 /* qtm-menumul@2x.png in Resources */,
+				D391C95016C9D3C600827B51 /* qtm-menusub@2x.png in Resources */,
+				D391C95116C9D3C600827B51 /* qtm-menuadd@2x.png in Resources */,
+				D391C95216C9D3C600827B51 /* qtm-menubg@2x.png in Resources */,
+				D391C95316C9D3C600827B51 /* qtm-blankbg@2x.png in Resources */,
+				D391C95416C9D3C600827B51 /* qtm-navbar@2x.png in Resources */,
+				D391C95516C9D3C600827B51 /* qtm-touchtostart.png in Resources */,
+				D391C95616C9D3C600827B51 /* qtm-blankPopup.png in Resources */,
+				D391C95716C9D3C600827B51 /* qtm-blankPopup@2x.png in Resources */,
+				D391C95816C9D3C600827B51 /* qtm-touchtostart@2x.png in Resources */,
+				D391C95B16C9D3FD00827B51 /* Icon.png in Resources */,
+				D391C95D16C9D46E00827B51 /* Icon@2x.png in Resources */,
+				D391C95F16C9D50500827B51 /* Icon-iPad.png in Resources */,
+				D391C96116C9D53900827B51 /* Icon-iPad@2x.png in Resources */,
+				D391C96316C9D5E500827B51 /* math-correct.wav in Resources */,
+				D391C96516C9D5EE00827B51 /* math-wrong.wav in Resources */,
+				D391C96B16C9D66B00827B51 /* info-bg@2x.png in Resources */,
+				D391C96C16C9D66B00827B51 /* user-cell-bg@2x.png in Resources */,
+				D391C96D16C9D66B00827B51 /* main-bg@2x.png in Resources */,
+				D391C96E16C9D66B00827B51 /* greenbutton.png in Resources */,
+				D391C96F16C9D66B00827B51 /* redbutton.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D391C90616C8BDCC00827B51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D391C91516C8BDCC00827B51 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D391C90716C8BDCC00827B51 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D391C8DC16C8BDCB00827B51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D391C8F016C8BDCB00827B51 /* main.m in Sources */,
+				D391C8F416C8BDCB00827B51 /* AppDelegate.m in Sources */,
+				D391C90316C8BDCC00827B51 /* ViewController.m in Sources */,
+				D391C97216CA085200827B51 /* MainNavController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D391C90416C8BDCC00827B51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D391C91816C8BDCC00827B51 /* QuickTouchMath2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D391C90F16C8BDCC00827B51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D391C8DF16C8BDCB00827B51 /* QuickTouchMath2 */;
+			targetProxy = D391C90E16C8BDCC00827B51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D391C8EC16C8BDCB00827B51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D391C8ED16C8BDCB00827B51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D391C8FB16C8BDCB00827B51 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D391C8FC16C8BDCB00827B51 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D391C8FE16C8BDCB00827B51 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D391C8FF16C8BDCB00827B51 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D391C91316C8BDCC00827B51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D391C91416C8BDCC00827B51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D391C91916C8BDCC00827B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D391C91A16C8BDCC00827B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D391C91C16C8BDCC00827B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickTouchMath2/QuickTouchMath2-Prefix.pch";
+				INFOPLIST_FILE = "QuickTouchMath2/QuickTouchMath2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D391C91D16C8BDCC00827B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickTouchMath2/QuickTouchMath2-Prefix.pch";
+				INFOPLIST_FILE = "QuickTouchMath2/QuickTouchMath2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D391C91F16C8BDCC00827B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuickTouchMath2.app/QuickTouchMath2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickTouchMath2/QuickTouchMath2-Prefix.pch";
+				INFOPLIST_FILE = "QuickTouchMath2Tests/QuickTouchMath2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D391C92016C8BDCC00827B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuickTouchMath2.app/QuickTouchMath2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickTouchMath2/QuickTouchMath2-Prefix.pch";
+				INFOPLIST_FILE = "QuickTouchMath2Tests/QuickTouchMath2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D391C8DB16C8BDCB00827B51 /* Build configuration list for PBXProject "QuickTouchMath2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D391C91916C8BDCC00827B51 /* Debug */,
+				D391C91A16C8BDCC00827B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D391C91B16C8BDCC00827B51 /* Build configuration list for PBXNativeTarget "QuickTouchMath2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D391C91C16C8BDCC00827B51 /* Debug */,
+				D391C91D16C8BDCC00827B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D391C91E16C8BDCC00827B51 /* Build configuration list for PBXNativeTarget "QuickTouchMath2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D391C91F16C8BDCC00827B51 /* Debug */,
+				D391C92016C8BDCC00827B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D391C8D816C8BDCB00827B51 /* Project object */;
+}
