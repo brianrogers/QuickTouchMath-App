@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* MathQuizAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MathQuizAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28860BE50F44EE6400985440 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28860BE40F44EE6400985440 /* CoreData.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		2899E5600DE3E45000AC0155 /* UserSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* UserSelectViewController.xib */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28C286E10D94DF7D0034E888 /* UserSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* UserSelectViewController.m */; };
+		28D3F202112F7DC200FD0661 /* MathQuiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D3F201112F7DC200FD0661 /* MathQuiz.xcdatamodeld */; };
+		D309804B12B887FD002FCFB6 /* Scores.m in Sources */ = {isa = PBXBuildFile; fileRef = D309804A12B887FD002FCFB6 /* Scores.m */; };
+		D30980BD12B89585002FCFB6 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = D30980BC12B89585002FCFB6 /* Users.m */; };
+		D319C786117AAFB9004C918A /* math-correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = D319C784117AAFB9004C918A /* math-correct.wav */; };
+		D319C787117AAFB9004C918A /* math-wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = D319C785117AAFB9004C918A /* math-wrong.wav */; };
+		D319C7A9117AB0E4004C918A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D319C7A8117AB0E4004C918A /* AVFoundation.framework */; };
+		D319C80C117AD45F004C918A /* redbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D319C80A117AD45F004C918A /* redbutton.png */; };
+		D319C80D117AD45F004C918A /* greenbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D319C80B117AD45F004C918A /* greenbutton.png */; };
+		D319C8AF11815E29004C918A /* MainMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = D319C8AD11815E29004C918A /* MainMenuView.m */; };
+		D319C8B011815E29004C918A /* MainMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D319C8AE11815E29004C918A /* MainMenuView.xib */; };
+		D31C948116F94CCB0086FDA0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D31C948016F94CCB0086FDA0 /* Default-568h@2x.png */; };
+		D32F3CE0128665E400D96D01 /* NSMutableArray_Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = D32F3CDF128665E400D96D01 /* NSMutableArray_Shuffling.m */; };
+		D3301CC012EA81D50095E3F0 /* qtm-blankPopup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301CBE12EA81D50095E3F0 /* qtm-blankPopup@2x.png */; };
+		D3301CC112EA81D50095E3F0 /* qtm-touchtostart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301CBF12EA81D50095E3F0 /* qtm-touchtostart@2x.png */; };
+		D3301CC412EA81E00095E3F0 /* qtm-touchtostart.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301CC212EA81E00095E3F0 /* qtm-touchtostart.png */; };
+		D3301CC512EA81E00095E3F0 /* qtm-blankPopup.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301CC312EA81E00095E3F0 /* qtm-blankPopup.png */; };
+		D3301E7C12EBF4D00095E3F0 /* qtm-usercell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301E7312EBF4D00095E3F0 /* qtm-usercell@2x.png */; };
+		D3301E7D12EBF4D00095E3F0 /* qtm-gamebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301E7412EBF4D00095E3F0 /* qtm-gamebg@2x.png */; };
+		D3301E7E12EBF4D00095E3F0 /* qtm-menudiv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301E7512EBF4D00095E3F0 /* qtm-menudiv@2x.png */; };
+		D3301E7F12EBF4D00095E3F0 /* qtm-menumul@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301E7612EBF4D00095E3F0 /* qtm-menumul@2x.png */; };
+		D3301E8012EBF4D00095E3F0 /* qtm-menusub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301E7712EBF4D00095E3F0 /* qtm-menusub@2x.png */; };
+		D3301E8112EBF4D00095E3F0 /* qtm-menuadd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301E7812EBF4D00095E3F0 /* qtm-menuadd@2x.png */; };
+		D3301E8212EBF4D00095E3F0 /* qtm-menubg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301E7912EBF4D00095E3F0 /* qtm-menubg@2x.png */; };
+		D3301E8312EBF4D00095E3F0 /* qtm-blankbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301E7A12EBF4D00095E3F0 /* qtm-blankbg@2x.png */; };
+		D3301E8412EBF4D00095E3F0 /* qtm-navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301E7B12EBF4D00095E3F0 /* qtm-navbar@2x.png */; };
+		D3301EE712EC02100095E3F0 /* qtm-gamebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301EE612EC02100095E3F0 /* qtm-gamebutton@2x.png */; };
+		D3301F2012EC0DA80095E3F0 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301F1F12EC0DA80095E3F0 /* Icon@2x.png */; };
+		D3301F2D12EC0E700095E3F0 /* qtm-navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301F2312EC0E700095E3F0 /* qtm-navbar.png */; };
+		D3301F2E12EC0E700095E3F0 /* qtm-blankbg.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301F2412EC0E700095E3F0 /* qtm-blankbg.png */; };
+		D3301F2F12EC0E700095E3F0 /* qtm-menubg.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301F2512EC0E700095E3F0 /* qtm-menubg.png */; };
+		D3301F3012EC0E700095E3F0 /* qtm-menuadd.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301F2612EC0E700095E3F0 /* qtm-menuadd.png */; };
+		D3301F3112EC0E700095E3F0 /* qtm-menusub.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301F2712EC0E700095E3F0 /* qtm-menusub.png */; };
+		D3301F3212EC0E700095E3F0 /* qtm-menumul.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301F2812EC0E700095E3F0 /* qtm-menumul.png */; };
+		D3301F3312EC0E700095E3F0 /* qtm-menudiv.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301F2912EC0E700095E3F0 /* qtm-menudiv.png */; };
+		D3301F3412EC0E700095E3F0 /* qtm-gamebg.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301F2A12EC0E700095E3F0 /* qtm-gamebg.png */; };
+		D3301F3512EC0E700095E3F0 /* qtm-usercell.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301F2B12EC0E700095E3F0 /* qtm-usercell.png */; };
+		D3301F3612EC0E700095E3F0 /* qtm-gamebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D3301F2C12EC0E700095E3F0 /* qtm-gamebutton.png */; };
+		D345FC6312C474C6003D9888 /* user-cell-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D345FC6212C474C6003D9888 /* user-cell-bg@2x.png */; };
+		D35D2E14115DB82A007CB9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D35D2E13115DB82A007CB9F9 /* MainViewController.m */; };
+		D35D2E16115DB83B007CB9F9 /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D35D2E15115DB83B007CB9F9 /* GameView.xib */; };
+		D35DD4A61329DA3E00DB2C11 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D35DD4A51329DA3E00DB2C11 /* Default.png */; };
+		D35DD4A81329DA5900DB2C11 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D35DD4A71329DA5900DB2C11 /* Default@2x.png */; };
+		D37EB60912ED32FD00C7DF1F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D37EB60812ED32FD00C7DF1F /* Icon.png */; };
+		D3C260F41162EC9D0026A74A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3C260F31162EC9D0026A74A /* Settings.bundle */; };
+		D3C2612D1162F2BD0026A74A /* AddNewUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C2612B1162F2BD0026A74A /* AddNewUser.m */; };
+		D3C2612E1162F2BD0026A74A /* AddNewUser.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3C2612C1162F2BD0026A74A /* AddNewUser.xib */; };
+		D3DEA01112C01ED900DC6427 /* main-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3DEA01012C01ED900DC6427 /* main-bg@2x.png */; };
+		D3DEA0ED12C055BE00DC6427 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DEA0EC12C055BE00DC6427 /* CustomCell.m */; };
+		D3DEA1D012C06E7400DC6427 /* ViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DEA1CF12C06E7400DC6427 /* ViewFactory.m */; };
+		D3DEA1D812C06F7600DC6427 /* ViewTemplates.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3DEA1D712C06F7600DC6427 /* ViewTemplates.xib */; };
+		D3E9A3E312E29AB0000866BD /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E9A3E212E29AB0000866BD /* AppConfig.m */; };
+		D3E9A3F112E2A06B000866BD /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3E9A3F012E2A06B000866BD /* config.plist */; };
+		D3E9A40212E2A7AB000866BD /* info-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E9A40012E2A7AB000866BD /* info-bg@2x.png */; };
+		D3E9A40312E2A7AB000866BD /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E9A40112E2A7AB000866BD /* default@2x.png */; };
+		D3E9A42B12E2B45C000866BD /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E9A42912E2B45C000866BD /* InfoViewController.m */; };
+		D3E9A42C12E2B45C000866BD /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E9A42A12E2B45C000866BD /* InfoViewController.xib */; };
+		D3E9A46B12E2BCA9000866BD /* infoText.html in Resources */ = {isa = PBXBuildFile; fileRef = D3E9A46A12E2BCA9000866BD /* infoText.html */; };
+		D3E9A4DE12E2CE18000866BD /* QuickTouchMathQuestions.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3E9A4DD12E2CE18000866BD /* QuickTouchMathQuestions.plist */; };
+		D3E9A4E112E2D066000866BD /* QuizData.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E9A4E012E2D066000866BD /* QuizData.m */; };
+		D3E9A68612E6BEC2000866BD /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E9A68312E6BEC2000866BD /* default.png */; };
+		D3F98FBC12F91E80002C561F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F98FBB12F91E80002C561F /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* MathQuizAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathQuizAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* MathQuizAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathQuizAppDelegate.m; sourceTree = "<group>"; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28860B760F44E54D00985440 /* MathQuiz.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MathQuiz.xcdatamodel; sourceTree = "<group>"; };
+		28860BE40F44EE6400985440 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E55F0DE3E45000AC0155 /* UserSelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserSelectViewController.xib; sourceTree = "<group>"; };
+		28A0AAE50D9B0CCF005BE974 /* MathQuiz_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathQuiz_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* UserSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserSelectViewController.h; path = Classes/UserSelectViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* UserSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserSelectViewController.m; path = Classes/UserSelectViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* MathQuiz-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MathQuiz-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D309804912B887FD002FCFB6 /* Scores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scores.h; sourceTree = "<group>"; };
+		D309804A12B887FD002FCFB6 /* Scores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scores.m; sourceTree = "<group>"; };
+		D30980BB12B89585002FCFB6 /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
+		D30980BC12B89585002FCFB6 /* Users.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
+		D319C784117AAFB9004C918A /* math-correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "math-correct.wav"; sourceTree = "<group>"; };
+		D319C785117AAFB9004C918A /* math-wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "math-wrong.wav"; sourceTree = "<group>"; };
+		D319C7A8117AB0E4004C918A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D319C80A117AD45F004C918A /* redbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redbutton.png; sourceTree = "<group>"; };
+		D319C80B117AD45F004C918A /* greenbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenbutton.png; sourceTree = "<group>"; };
+		D319C8AC11815E29004C918A /* MainMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuView.h; path = Classes/MainMenuView.h; sourceTree = "<group>"; };
+		D319C8AD11815E29004C918A /* MainMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuView.m; path = Classes/MainMenuView.m; sourceTree = "<group>"; };
+		D319C8AE11815E29004C918A /* MainMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenuView.xib; path = Classes/MainMenuView.xib; sourceTree = "<group>"; };
+		D31C948016F94CCB0086FDA0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D32F3CDE128665E400D96D01 /* NSMutableArray_Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArray_Shuffling.h; sourceTree = "<group>"; };
+		D32F3CDF128665E400D96D01 /* NSMutableArray_Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArray_Shuffling.m; sourceTree = "<group>"; };
+		D3301CBE12EA81D50095E3F0 /* qtm-blankPopup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-blankPopup@2x.png"; sourceTree = "<group>"; };
+		D3301CBF12EA81D50095E3F0 /* qtm-touchtostart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-touchtostart@2x.png"; sourceTree = "<group>"; };
+		D3301CC212EA81E00095E3F0 /* qtm-touchtostart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-touchtostart.png"; sourceTree = "<group>"; };
+		D3301CC312EA81E00095E3F0 /* qtm-blankPopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-blankPopup.png"; sourceTree = "<group>"; };
+		D3301E7312EBF4D00095E3F0 /* qtm-usercell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-usercell@2x.png"; sourceTree = "<group>"; };
+		D3301E7412EBF4D00095E3F0 /* qtm-gamebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-gamebg@2x.png"; sourceTree = "<group>"; };
+		D3301E7512EBF4D00095E3F0 /* qtm-menudiv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menudiv@2x.png"; sourceTree = "<group>"; };
+		D3301E7612EBF4D00095E3F0 /* qtm-menumul@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menumul@2x.png"; sourceTree = "<group>"; };
+		D3301E7712EBF4D00095E3F0 /* qtm-menusub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menusub@2x.png"; sourceTree = "<group>"; };
+		D3301E7812EBF4D00095E3F0 /* qtm-menuadd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menuadd@2x.png"; sourceTree = "<group>"; };
+		D3301E7912EBF4D00095E3F0 /* qtm-menubg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menubg@2x.png"; sourceTree = "<group>"; };
+		D3301E7A12EBF4D00095E3F0 /* qtm-blankbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-blankbg@2x.png"; sourceTree = "<group>"; };
+		D3301E7B12EBF4D00095E3F0 /* qtm-navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-navbar@2x.png"; sourceTree = "<group>"; };
+		D3301EE612EC02100095E3F0 /* qtm-gamebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-gamebutton@2x.png"; sourceTree = "<group>"; };
+		D3301F1F12EC0DA80095E3F0 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		D3301F2312EC0E700095E3F0 /* qtm-navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-navbar.png"; sourceTree = "<group>"; };
+		D3301F2412EC0E700095E3F0 /* qtm-blankbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-blankbg.png"; sourceTree = "<group>"; };
+		D3301F2512EC0E700095E3F0 /* qtm-menubg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menubg.png"; sourceTree = "<group>"; };
+		D3301F2612EC0E700095E3F0 /* qtm-menuadd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menuadd.png"; sourceTree = "<group>"; };
+		D3301F2712EC0E700095E3F0 /* qtm-menusub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menusub.png"; sourceTree = "<group>"; };
+		D3301F2812EC0E700095E3F0 /* qtm-menumul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menumul.png"; sourceTree = "<group>"; };
+		D3301F2912EC0E700095E3F0 /* qtm-menudiv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-menudiv.png"; sourceTree = "<group>"; };
+		D3301F2A12EC0E700095E3F0 /* qtm-gamebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-gamebg.png"; sourceTree = "<group>"; };
+		D3301F2B12EC0E700095E3F0 /* qtm-usercell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-usercell.png"; sourceTree = "<group>"; };
+		D3301F2C12EC0E700095E3F0 /* qtm-gamebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qtm-gamebutton.png"; sourceTree = "<group>"; };
+		D345FC6212C474C6003D9888 /* user-cell-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-cell-bg@2x.png"; sourceTree = "<group>"; };
+		D35D2E12115DB829007CB9F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		D35D2E13115DB82A007CB9F9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
+		D35D2E15115DB83B007CB9F9 /* GameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameView.xib; sourceTree = "<group>"; };
+		D35DD4A51329DA3E00DB2C11 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D35DD4A71329DA5900DB2C11 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D37EB5B012ECFF1600C7DF1F /* QuickTouchMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickTouchMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D37EB60812ED32FD00C7DF1F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D3C260F31162EC9D0026A74A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D3C2612A1162F2BD0026A74A /* AddNewUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddNewUser.h; path = Classes/AddNewUser.h; sourceTree = "<group>"; };
+		D3C2612B1162F2BD0026A74A /* AddNewUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddNewUser.m; path = Classes/AddNewUser.m; sourceTree = "<group>"; };
+		D3C2612C1162F2BD0026A74A /* AddNewUser.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AddNewUser.xib; path = Classes/AddNewUser.xib; sourceTree = "<group>"; };
+		D3DEA01012C01ED900DC6427 /* main-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-bg@2x.png"; sourceTree = "<group>"; };
+		D3DEA0EB12C055BE00DC6427 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		D3DEA0EC12C055BE00DC6427 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		D3DEA1CE12C06E7400DC6427 /* ViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewFactory.h; sourceTree = "<group>"; };
+		D3DEA1CF12C06E7400DC6427 /* ViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewFactory.m; sourceTree = "<group>"; };
+		D3DEA1D712C06F7600DC6427 /* ViewTemplates.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewTemplates.xib; sourceTree = "<group>"; };
+		D3E9A3E112E29AB0000866BD /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		D3E9A3E212E29AB0000866BD /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
+		D3E9A3F012E2A06B000866BD /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		D3E9A40012E2A7AB000866BD /* info-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-bg@2x.png"; sourceTree = "<group>"; };
+		D3E9A40112E2A7AB000866BD /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
+		D3E9A42812E2B45C000866BD /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		D3E9A42912E2B45C000866BD /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		D3E9A42A12E2B45C000866BD /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		D3E9A46A12E2BCA9000866BD /* infoText.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = infoText.html; sourceTree = "<group>"; };
+		D3E9A4DD12E2CE18000866BD /* QuickTouchMathQuestions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QuickTouchMathQuestions.plist; sourceTree = "<group>"; };
+		D3E9A4DF12E2D066000866BD /* QuizData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizData.h; sourceTree = "<group>"; };
+		D3E9A4E012E2D066000866BD /* QuizData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizData.m; sourceTree = "<group>"; };
+		D3E9A68312E6BEC2000866BD /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		D3F98FBB12F91E80002C561F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				28860BE50F44EE6400985440 /* CoreData.framework in Frameworks */,
+				D319C7A9117AB0E4004C918A /* AVFoundation.framework in Frameworks */,
+				D3F98FBC12F91E80002C561F /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* MathQuizAppDelegate.h */,
+				1D3623250D0F684500981E51 /* MathQuizAppDelegate.m */,
+				D32F3CDE128665E400D96D01 /* NSMutableArray_Shuffling.h */,
+				D32F3CDF128665E400D96D01 /* NSMutableArray_Shuffling.m */,
+				D3DEA0EB12C055BE00DC6427 /* CustomCell.h */,
+				D3DEA0EC12C055BE00DC6427 /* CustomCell.m */,
+				D3DEA1CE12C06E7400DC6427 /* ViewFactory.h */,
+				D3DEA1CF12C06E7400DC6427 /* ViewFactory.m */,
+				D3E9A3E112E29AB0000866BD /* AppConfig.h */,
+				D3E9A3E212E29AB0000866BD /* AppConfig.m */,
+				D3E9A4DF12E2D066000866BD /* QuizData.h */,
+				D3E9A4E012E2D066000866BD /* QuizData.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D37EB5B012ECFF1600C7DF1F /* QuickTouchMath.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				D31C948016F94CCB0086FDA0 /* Default-568h@2x.png */,
+				D35DD4A71329DA5900DB2C11 /* Default@2x.png */,
+				D35DD4A51329DA3E00DB2C11 /* Default.png */,
+				D3DEA06B12C042A500DC6427 /* DataClasses */,
+				D3DEA06A12C0428700DC6427 /* Views */,
+				D3DEA05B12C0416300DC6427 /* XIB */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				D3C260F31162EC9D0026A74A /* Settings.bundle */,
+				D3F98FBB12F91E80002C561F /* MessageUI.framework */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* MathQuiz-Info.plist */,
+				28A0AAE50D9B0CCF005BE974 /* MathQuiz_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				D3E9A3F012E2A06B000866BD /* config.plist */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3DEA08512C0438600DC6427 /* Sounds */,
+				D3DEA08412C0436B00DC6427 /* Images */,
+				D3DEA08312C0435400DC6427 /* 2xImages */,
+				D3E9A46A12E2BCA9000866BD /* infoText.html */,
+				D3E9A4DD12E2CE18000866BD /* QuickTouchMathQuestions.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D319C7A8117AB0E4004C918A /* AVFoundation.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				28860BE40F44EE6400985440 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3DEA05B12C0416300DC6427 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				D3E9A42A12E2B45C000866BD /* InfoViewController.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				2899E55F0DE3E45000AC0155 /* UserSelectViewController.xib */,
+				D3C2612C1162F2BD0026A74A /* AddNewUser.xib */,
+				D35D2E15115DB83B007CB9F9 /* GameView.xib */,
+				D319C8AE11815E29004C918A /* MainMenuView.xib */,
+				D3DEA1D712C06F7600DC6427 /* ViewTemplates.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		D3DEA06A12C0428700DC6427 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3C2612A1162F2BD0026A74A /* AddNewUser.h */,
+				D3C2612B1162F2BD0026A74A /* AddNewUser.m */,
+				D319C8AC11815E29004C918A /* MainMenuView.h */,
+				D319C8AD11815E29004C918A /* MainMenuView.m */,
+				D35D2E12115DB829007CB9F9 /* MainViewController.h */,
+				D35D2E13115DB82A007CB9F9 /* MainViewController.m */,
+				28C286DF0D94DF7D0034E888 /* UserSelectViewController.h */,
+				28C286E00D94DF7D0034E888 /* UserSelectViewController.m */,
+				D3E9A42812E2B45C000866BD /* InfoViewController.h */,
+				D3E9A42912E2B45C000866BD /* InfoViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D3DEA06B12C042A500DC6427 /* DataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				28D3F201112F7DC200FD0661 /* MathQuiz.xcdatamodeld */,
+				D30980BB12B89585002FCFB6 /* Users.h */,
+				D30980BC12B89585002FCFB6 /* Users.m */,
+				D309804912B887FD002FCFB6 /* Scores.h */,
+				D309804A12B887FD002FCFB6 /* Scores.m */,
+			);
+			name = DataClasses;
+			sourceTree = "<group>";
+		};
+		D3DEA08312C0435400DC6427 /* 2xImages */ = {
+			isa = PBXGroup;
+			children = (
+				D3301F1F12EC0DA80095E3F0 /* Icon@2x.png */,
+				D3301EE612EC02100095E3F0 /* qtm-gamebutton@2x.png */,
+				D3301E7312EBF4D00095E3F0 /* qtm-usercell@2x.png */,
+				D3301E7412EBF4D00095E3F0 /* qtm-gamebg@2x.png */,
+				D3301E7512EBF4D00095E3F0 /* qtm-menudiv@2x.png */,
+				D3301E7612EBF4D00095E3F0 /* qtm-menumul@2x.png */,
+				D3301E7712EBF4D00095E3F0 /* qtm-menusub@2x.png */,
+				D3301E7812EBF4D00095E3F0 /* qtm-menuadd@2x.png */,
+				D3301E7912EBF4D00095E3F0 /* qtm-menubg@2x.png */,
+				D3301E7A12EBF4D00095E3F0 /* qtm-blankbg@2x.png */,
+				D3301E7B12EBF4D00095E3F0 /* qtm-navbar@2x.png */,
+				D3301CBE12EA81D50095E3F0 /* qtm-blankPopup@2x.png */,
+				D3301CBF12EA81D50095E3F0 /* qtm-touchtostart@2x.png */,
+				D345FC6212C474C6003D9888 /* user-cell-bg@2x.png */,
+				D3E9A40012E2A7AB000866BD /* info-bg@2x.png */,
+				D3E9A40112E2A7AB000866BD /* default@2x.png */,
+				D3DEA01012C01ED900DC6427 /* main-bg@2x.png */,
+			);
+			name = 2xImages;
+			sourceTree = "<group>";
+		};
+		D3DEA08412C0436B00DC6427 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D37EB60812ED32FD00C7DF1F /* Icon.png */,
+				D3301F2312EC0E700095E3F0 /* qtm-navbar.png */,
+				D3301F2412EC0E700095E3F0 /* qtm-blankbg.png */,
+				D3301F2512EC0E700095E3F0 /* qtm-menubg.png */,
+				D3301F2612EC0E700095E3F0 /* qtm-menuadd.png */,
+				D3301F2712EC0E700095E3F0 /* qtm-menusub.png */,
+				D3301F2812EC0E700095E3F0 /* qtm-menumul.png */,
+				D3301F2912EC0E700095E3F0 /* qtm-menudiv.png */,
+				D3301F2A12EC0E700095E3F0 /* qtm-gamebg.png */,
+				D3301F2B12EC0E700095E3F0 /* qtm-usercell.png */,
+				D3301F2C12EC0E700095E3F0 /* qtm-gamebutton.png */,
+				D3301CC212EA81E00095E3F0 /* qtm-touchtostart.png */,
+				D3301CC312EA81E00095E3F0 /* qtm-blankPopup.png */,
+				D3E9A68312E6BEC2000866BD /* default.png */,
+				D319C80A117AD45F004C918A /* redbutton.png */,
+				D319C80B117AD45F004C918A /* greenbutton.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D3DEA08512C0438600DC6427 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D319C784117AAFB9004C918A /* math-correct.wav */,
+				D319C785117AAFB9004C918A /* math-wrong.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MathQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MathQuiz" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MathQuiz;
+			productName = MathQuiz;
+			productReference = D37EB5B012ECFF1600C7DF1F /* QuickTouchMath.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = CreatureTeachers;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "QuickTouchMath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MathQuiz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				2899E5600DE3E45000AC0155 /* UserSelectViewController.xib in Resources */,
+				D35D2E16115DB83B007CB9F9 /* GameView.xib in Resources */,
+				D3C260F41162EC9D0026A74A /* Settings.bundle in Resources */,
+				D3C2612E1162F2BD0026A74A /* AddNewUser.xib in Resources */,
+				D319C786117AAFB9004C918A /* math-correct.wav in Resources */,
+				D319C787117AAFB9004C918A /* math-wrong.wav in Resources */,
+				D319C80C117AD45F004C918A /* redbutton.png in Resources */,
+				D319C80D117AD45F004C918A /* greenbutton.png in Resources */,
+				D319C8B011815E29004C918A /* MainMenuView.xib in Resources */,
+				D3DEA01112C01ED900DC6427 /* main-bg@2x.png in Resources */,
+				D3DEA1D812C06F7600DC6427 /* ViewTemplates.xib in Resources */,
+				D345FC6312C474C6003D9888 /* user-cell-bg@2x.png in Resources */,
+				D3E9A3F112E2A06B000866BD /* config.plist in Resources */,
+				D3E9A40212E2A7AB000866BD /* info-bg@2x.png in Resources */,
+				D3E9A40312E2A7AB000866BD /* default@2x.png in Resources */,
+				D3E9A42C12E2B45C000866BD /* InfoViewController.xib in Resources */,
+				D3E9A46B12E2BCA9000866BD /* infoText.html in Resources */,
+				D3E9A4DE12E2CE18000866BD /* QuickTouchMathQuestions.plist in Resources */,
+				D3E9A68612E6BEC2000866BD /* default.png in Resources */,
+				D3301CC012EA81D50095E3F0 /* qtm-blankPopup@2x.png in Resources */,
+				D3301CC112EA81D50095E3F0 /* qtm-touchtostart@2x.png in Resources */,
+				D3301CC412EA81E00095E3F0 /* qtm-touchtostart.png in Resources */,
+				D3301CC512EA81E00095E3F0 /* qtm-blankPopup.png in Resources */,
+				D3301E7C12EBF4D00095E3F0 /* qtm-usercell@2x.png in Resources */,
+				D3301E7D12EBF4D00095E3F0 /* qtm-gamebg@2x.png in Resources */,
+				D3301E7E12EBF4D00095E3F0 /* qtm-menudiv@2x.png in Resources */,
+				D3301E7F12EBF4D00095E3F0 /* qtm-menumul@2x.png in Resources */,
+				D3301E8012EBF4D00095E3F0 /* qtm-menusub@2x.png in Resources */,
+				D3301E8112EBF4D00095E3F0 /* qtm-menuadd@2x.png in Resources */,
+				D3301E8212EBF4D00095E3F0 /* qtm-menubg@2x.png in Resources */,
+				D3301E8312EBF4D00095E3F0 /* qtm-blankbg@2x.png in Resources */,
+				D3301E8412EBF4D00095E3F0 /* qtm-navbar@2x.png in Resources */,
+				D3301EE712EC02100095E3F0 /* qtm-gamebutton@2x.png in Resources */,
+				D3301F2012EC0DA80095E3F0 /* Icon@2x.png in Resources */,
+				D3301F2D12EC0E700095E3F0 /* qtm-navbar.png in Resources */,
+				D3301F2E12EC0E700095E3F0 /* qtm-blankbg.png in Resources */,
+				D3301F2F12EC0E700095E3F0 /* qtm-menubg.png in Resources */,
+				D3301F3012EC0E700095E3F0 /* qtm-menuadd.png in Resources */,
+				D3301F3112EC0E700095E3F0 /* qtm-menusub.png in Resources */,
+				D3301F3212EC0E700095E3F0 /* qtm-menumul.png in Resources */,
+				D3301F3312EC0E700095E3F0 /* qtm-menudiv.png in Resources */,
+				D3301F3412EC0E700095E3F0 /* qtm-gamebg.png in Resources */,
+				D3301F3512EC0E700095E3F0 /* qtm-usercell.png in Resources */,
+				D3301F3612EC0E700095E3F0 /* qtm-gamebutton.png in Resources */,
+				D37EB60912ED32FD00C7DF1F /* Icon.png in Resources */,
+				D35DD4A61329DA3E00DB2C11 /* Default.png in Resources */,
+				D35DD4A81329DA5900DB2C11 /* Default@2x.png in Resources */,
+				D31C948116F94CCB0086FDA0 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* MathQuizAppDelegate.m in Sources */,
+				28C286E10D94DF7D0034E888 /* UserSelectViewController.m in Sources */,
+				28D3F202112F7DC200FD0661 /* MathQuiz.xcdatamodeld in Sources */,
+				D35D2E14115DB82A007CB9F9 /* MainViewController.m in Sources */,
+				D3C2612D1162F2BD0026A74A /* AddNewUser.m in Sources */,
+				D319C8AF11815E29004C918A /* MainMenuView.m in Sources */,
+				D32F3CE0128665E400D96D01 /* NSMutableArray_Shuffling.m in Sources */,
+				D309804B12B887FD002FCFB6 /* Scores.m in Sources */,
+				D30980BD12B89585002FCFB6 /* Users.m in Sources */,
+				D3DEA0ED12C055BE00DC6427 /* CustomCell.m in Sources */,
+				D3DEA1D012C06E7400DC6427 /* ViewFactory.m in Sources */,
+				D3E9A3E312E29AB0000866BD /* AppConfig.m in Sources */,
+				D3E9A42B12E2B45C000866BD /* InfoViewController.m in Sources */,
+				D3E9A4E112E2D066000866BD /* QuizData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuickTouchMath_Prefix.pch;
+				INFOPLIST_FILE = "QuickTouchMath-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = QuickTouchMath;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuickTouchMath_Prefix.pch;
+				INFOPLIST_FILE = "QuickTouchMath-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = QuickTouchMath;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		D323E63312ED3C2600A9E8C0 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		D323E63412ED3C2600A9E8C0 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuickTouchMath_Prefix.pch;
+				INFOPLIST_FILE = "QuickTouchMath-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = QuickTouchMath;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MathQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				D323E63412ED3C2600A9E8C0 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "QuickTouchMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				D323E63312ED3C2600A9E8C0 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28D3F201112F7DC200FD0661 /* MathQuiz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28860B760F44E54D00985440 /* MathQuiz.xcdatamodel */,
+			);
+			currentVersion = 28860B760F44E54D00985440 /* MathQuiz.xcdatamodel */;
+			path = MathQuiz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
