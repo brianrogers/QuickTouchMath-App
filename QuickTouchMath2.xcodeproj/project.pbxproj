@@ -111,7 +111,7 @@
 		D391C8F516C8BDCB00827B51 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D391C8F716C8BDCB00827B51 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D391C8F916C8BDCB00827B51 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D391C8FC16C8BDCB00827B51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		D391C8FC16C8BDCB00827B51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
 		D391C8FF16C8BDCB00827B51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		D391C90116C8BDCC00827B51 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D391C90216C8BDCC00827B51 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -174,6 +174,9 @@
 				D391C8E616C8BDCB00827B51 /* Foundation.framework in Frameworks */,
 				D391C8E816C8BDCB00827B51 /* CoreGraphics.framework in Frameworks */,
 				D3062C7916FD5FB8004F746A /* AudioToolbox.framework in Frameworks */,
+				D391C8E416C8BDCB00827B51 /* UIKit.framework in Frameworks */,
+				D391C8E616C8BDCB00827B51 /* Foundation.framework in Frameworks */,
+				D391C8E816C8BDCB00827B51 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
