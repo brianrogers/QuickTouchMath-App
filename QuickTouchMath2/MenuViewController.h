@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GameViewController.h"
+#import "AppDelegate.h"
 
 @interface MenuViewController : UIViewController
 {
@@ -30,8 +31,7 @@ IBOutlet UILabel *divHighScore;
 - (IBAction)startSub;
 - (IBAction)startMul;
 - (IBAction)startDiv;
-- (IBAction)changeUser;
-- (IBAction)share;
+
 
 - (void)loadScores;
 //- (void)setDetailItem:(NSManagedObject *)managedObject;

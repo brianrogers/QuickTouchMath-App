@@ -31,8 +31,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     NSLog(@"MainNavController viewDidLoad");
-    [self.navigationBar setBackgroundImage:[UIImage imageNamed: @"qtm-navbar.png"] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationBar setTintColor:[UIColor blackColor]];
+    //[self.navigationBar setBackgroundImage:[UIImage imageNamed: @"qtm-navbar.png"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setTintColor:[UIColor blueColor]];
 }
 
 - (void)didReceiveMemoryWarning

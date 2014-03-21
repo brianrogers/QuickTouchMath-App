@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
+#import "Score.h"
+#import "AppDelegate.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    IBOutlet UITableView *tableView;
+}
+@property (nonatomic, strong) NSArray *users;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end
+

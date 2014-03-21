@@ -31,10 +31,13 @@
     self.navigationController.navigationBarHidden = NO;
 	self.navigationItem.hidesBackButton = NO;
 	self.title = @" ";
+    addHighScore.text = @"";
+    subHighScore.text = @"";
+    mulHighScore.text = @"";
+    divHighScore.text = @"";
     
-	//nameLabel.text = [[currentUserObject valueForKey:@"name"] description];
-    
-	//[self loadScores];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    _nameLabel.text = [appDelegate.currentUser valueForKey:@"name"];
     
 	UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share)];
 	self.navigationItem.rightBarButtonItem = shareButton;
@@ -43,51 +46,44 @@
 - (void)viewDidAppear:(BOOL)animated
 {
 	[super viewDidAppear:animated];
-	//[self loadScores];
+	[self loadScores];
 }
 
-//- (void)loadScores {
-//	NSLog(@"loading scores");
-//	//load the scores
-//	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-//    
-//    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Scores"
-//											  inManagedObjectContext:self.managedObjectContext];
-//    [fetchRequest setEntity:entity];
-//    
-//    NSError *error;
-//    NSArray *items = [self.managedObjectContext
-//					  executeFetchRequest:fetchRequest error:&error];
-//
-//	NSLog(@"got items");
-//    
-//    // Step 2: Update Object
-//    for (Scores *u in items) {
-//		if ([u.User.name isEqual:[currentUserObject name]]) {
-//			if ([u.mode isEqual:@"ADD"] )
-//			{
-//				NSLog(@"showing add score");
-//				addHighScore.text = [NSString stringWithFormat:@"%@",u.score];
-//			}
-//			if ([u.mode isEqual:@"SUB"] )
-//			{
-//				NSLog(@"showing sub score");
-//				subHighScore.text = [NSString stringWithFormat:@"%@",u.score];
-//			}
-//			if ([u.mode isEqual:@"MUL"] )
-//			{
-//				NSLog(@"showing mul score");
-//				mulHighScore.text = [NSString stringWithFormat:@"%@",u.score];
-//			}
-//			if ([u.mode isEqual:@"DIV"] )
-//			{
-//				NSLog(@"showing div score");
-//				divHighScore.text = [NSString stringWithFormat:@"%@",u.score];
-//			}
-//		}
-//        
-//    }	
-//}
+- (void)loadScores {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSLog(@"user : %@",[appDelegate.currentUser valueForKey:@"name"]);
+    
+    NSArray *allScores = [Score findAll];
+    
+    NSLog(@"%@", allScores);
+    
+    for (Score *s in allScores) {
+        NSLog(@"user : %@", s.user.name);
+        if([s.user.name isEqualToString:appDelegate.currentUser.name]) {
+            if ([s.mode isEqual:@"ADD"] )
+			{
+				NSLog(@"showing add score");
+				addHighScore.text = [NSString stringWithFormat:@"%@",s.score];
+			}
+			if ([s.mode isEqual:@"SUB"] )
+			{
+				NSLog(@"showing sub score");
+				subHighScore.text = [NSString stringWithFormat:@"%@",s.score];
+			}
+			if ([s.mode isEqual:@"MUL"] )
+			{
+				NSLog(@"showing mul score");
+				mulHighScore.text = [NSString stringWithFormat:@"%@",s.score];
+			}
+			if ([s.mode isEqual:@"DIV"] )
+			{
+				NSLog(@"showing div score");
+				divHighScore.text = [NSString stringWithFormat:@"%@",s.score];
+			}
+        }
+    }
+
+}
 
 - (void)startGame:(NSString *)quizType {
 //	GameViewController *mainViewController;

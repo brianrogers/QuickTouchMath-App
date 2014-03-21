@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Brian Rogers. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface QuickTouchMath2Tests : SenTestCase
+@interface QuickTouchMath2Tests : XCTestCase
 
 @end

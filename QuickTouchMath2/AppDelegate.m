@@ -12,23 +12,29 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize currentUser = _currentUser;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    // Setup CoreData with MagicalRecord
+    // Step 1. Setup Core Data Stack with Magical Record
+    // Step 2. Relax. Why not have a beer? Surely all this talk of beer is making you thirsty…
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"QTMModel"];
+    
     MainNavController *viewController = (MainNavController *)[_navigationController topViewController];
     
     UIView *backgroundView = [[UIView alloc] initWithFrame: _navigationController.topViewController.view.frame];
-	backgroundView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"qtm-blankbg.png"]];
+	//backgroundView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"qtm-blankbg.png"]];
 	//backgroundView.frame = newFrame;
 	
 	[_window addSubview:backgroundView];
 	
 	viewController.view.backgroundColor = [UIColor clearColor];
 	
-    [_navigationController.navigationBar setBackgroundImage:[UIImage imageNamed: @"qtm-navbar.png"]
-                                             forBarMetrics:UIBarMetricsDefault];
-    [_navigationController.navigationBar setTintColor:[UIColor blackColor]];
+//    [_navigationController.navigationBar setBackgroundImage:[UIImage imageNamed: @"qtm-navbar.png"]
+//                                             forBarMetrics:UIBarMetricsDefault];
+    [_navigationController.navigationBar setTintColor:[UIColor magentaColor]];
     
     [_window addSubview:[_navigationController view]];
     [_window makeKeyAndVisible];

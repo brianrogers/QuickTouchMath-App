@@ -65,9 +65,15 @@
 	noPlayer.volume = 0.7;
     
 	[self.questionLabel setText:@" "];
+    [self.answerButton1 setTitle:@"" forState:UIControlStateNormal];
+    [self.answerButton2 setTitle:@"" forState:UIControlStateNormal];
+    [self.answerButton3 setTitle:@"" forState:UIControlStateNormal];
+    [self.answerButton4 setTitle:@"" forState:UIControlStateNormal];
+    [self.numCorrectLabel setText:@""];
+    
 	[self.startButton setAlpha:1];
 	[self.startButton setEnabled:YES];
-	[self resetGame];
+	//[self resetGame];
 }
 
 - (void)didReceiveMemoryWarning
@@ -196,44 +202,39 @@
 	}
 }
 
-//- (void)saveScore {
-//    
-//	NSLog(@"saving the score...");
-//	NSLog(@"username - %@",[currentUserObject valueForKey:@"name"]);
-//	NSLog(@"mode - %@", quizType);
-//    
-//	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-//    
-//    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Scores"
-//											  inManagedObjectContext:self.managedObjectContext];
-//    [fetchRequest setEntity:entity];
-//    
-//    NSError *error;
-//    NSArray *items = [self.managedObjectContext
-//					  executeFetchRequest:fetchRequest error:&error];
-//    [fetchRequest release];
-//    
-//    // Step 2: Update Object
-//    for (Scores *u in items) {
-//		if ([u.User.name isEqual:[currentUserObject name]]) {
-//			if ([u.mode isEqual:quizType] )
-//			{
-//				NSLog(@"Setting Score For %@ - mode %@",u.User.name, quizType);
-//				if ([u.score intValue] < numCorrect) {
-//					[u setScore:[NSNumber numberWithInt:numCorrect]];
-//				}
-//			}
-//		}
-//        
-//    }
-//    
-//    error = nil;
-//    if (![managedObjectContext save:&error]) {
-//        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-//        abort();
-//    }
-//    
-//}
+- (void)saveScore {
+    
+	NSLog(@"saving the score...");
+	//NSLog(@"username - %@",[currentUserObject valueForKey:@"name"]);
+	NSLog(@"mode - %@", quizType);
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSLog(@"user : %@",[appDelegate.currentUser valueForKey:@"name"]);
+    
+    NSArray *allScores = [Score findAll];
+    
+    NSLog(@"%@", allScores);
+    
+    for (Score *s in allScores) {
+        NSLog(@"user : %@", s.user.name);
+        if([s.user.name isEqualToString:appDelegate.currentUser.name]) {
+            NSLog(@"mode : %@", s.mode);
+            if([s.mode isEqualToString:quizType]) {
+                NSLog(@"score : %@ numCorrect %d", s.score, numCorrect);
+                if ([s.score intValue] < numCorrect) {
+                    [s setScore:[NSNumber numberWithInt:numCorrect]];
+                }
+            }
+        }
+    }
+    
+    [[NSManagedObjectContext defaultContext] saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
+        if (success) {
+            NSLog(@"You successfully saved your context.");
+        } else if (error) {
+            NSLog(@"Error saving context: %@", error.description);
+        }
+    }];
+}
 
 - (void)loadQuestionByIndex:(int)index
 {

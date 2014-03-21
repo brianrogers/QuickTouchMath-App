@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "MainNavController.h"
+#import "User.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) MainNavController *navigationController;
+
+@property (strong, nonatomic) User *currentUser;
+
 @end
