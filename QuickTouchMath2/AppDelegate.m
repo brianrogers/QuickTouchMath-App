@@ -25,7 +25,7 @@
     MainNavController *viewController = (MainNavController *)[_navigationController topViewController];
     
     UIView *backgroundView = [[UIView alloc] initWithFrame: _navigationController.topViewController.view.frame];
-	//backgroundView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"qtm-blankbg.png"]];
+	backgroundView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"qtm-blankbg.png"]];
 	//backgroundView.frame = newFrame;
 	
 	[_window addSubview:backgroundView];

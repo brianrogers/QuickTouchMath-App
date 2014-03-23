@@ -49,6 +49,21 @@
 	[self loadScores];
 }
 
+- (void) share {
+    NSLog(@"sharing");
+    
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, self.view.opaque, 0.0);
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage*theImage=UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    NSArray *activityItems = nil;
+    activityItems = @[theImage];
+    
+    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    [self presentViewController:activityController animated:YES completion:nil];
+}
+
 - (void)loadScores {
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     NSLog(@"user : %@",[appDelegate.currentUser valueForKey:@"name"]);
@@ -128,6 +143,7 @@
 {
     NSLog(@"identifier : %@", segue.identifier);
     [(GameViewController *)segue.destinationViewController setQuizType:segue.identifier];
+
 }
 
 - (void)didReceiveMemoryWarning

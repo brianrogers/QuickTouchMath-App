@@ -34,6 +34,7 @@ IBOutlet UILabel *divHighScore;
 
 
 - (void)loadScores;
+- (void)share;
 //- (void)setDetailItem:(NSManagedObject *)managedObject;
 //- (void)emailImage:(UIImage*)image;
 @end

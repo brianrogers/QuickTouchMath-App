@@ -20,7 +20,18 @@
     
     _tableView.dataSource = self;
     _tableView.delegate = self;
-    //[_tableView reloadData];
+    [_tableView reloadData];
+    
+    self.title = @"Quick Touch Math";
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor yellowColor]};
+    self.navigationController.navigationBar.tintColor = [UIColor yellowColor];
+    //self.navigationController.navigationBar.barTintColor = [UIColor yellowColor];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self fetchAllUsers];
+    [_tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,34 +45,84 @@
     return self.users.count;
 }
 
+// Override to support conditional editing of the table view.
+// This only needs to be implemented if you are going to be returning NO
+// for some items. By default, all items are editable.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return YES if you want the specified item to be editable.
+    return YES;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 95;
+}
+
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //add code here for when you hit delete
+        NSLog(@"delete row : %ld", (long)indexPath.row);
+        NSLog(@"delete user %@",[[self.users objectAtIndex:indexPath.row] valueForKey:@"name"]);
+        
+        User *userToDelete = [self.users objectAtIndex:indexPath.row];
+        [userToDelete deleteEntity];
+        NSArray *allScores = [Score findAll];
+        
+        for (Score *s in allScores) {
+            if([s.user.name isEqualToString:userToDelete.name]) {
+                [s deleteEntity];
+            }
+        }
+        
+        [self saveContext];
+        
+        [self fetchAllUsers];
+        [_tableView reloadData];
+    }
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableview cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableview dequeueReusableCellWithIdentifier:@"UserCell"];
+    PlayerCell *cell = [tableview dequeueReusableCellWithIdentifier:@"PlayerCell"];
 
     if (cell == nil) {
-        
-        
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"UserCell"];
+        cell = [[PlayerCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"PlayerCell"];
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        
     }
     
     User *item = (User *)[self.users objectAtIndex:indexPath.row];
-    cell.textLabel.text = item.name;
-
+    //cell.textLabel.text = item.name;
+    [cell.playerName setText:item.name];
+    
+    NSArray *allScores = [Score findAll];
+    
+    for (Score *s in allScores) {
+        if([s.user.name isEqualToString:item.name]) {
+            if ([s.mode isEqual:@"ADD"] )
+			{
+				[cell.addScore setText:[NSString stringWithFormat:@"%@",s.score]];
+			}
+			if ([s.mode isEqual:@"SUB"] )
+			{
+                [cell.subScore setText:[NSString stringWithFormat:@"%@",s.score]];
+			}
+			if ([s.mode isEqual:@"MUL"] )
+			{
+				[cell.mulScore setText:[NSString stringWithFormat:@"%@",s.score]];
+			}
+			if ([s.mode isEqual:@"DIV"] )
+			{
+				[cell.divScore setText:[NSString stringWithFormat:@"%@",s.score]];
+			}
+        }
+    }
+    
     return cell;
 }
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//    User *user = (User *)[self.users objectAtIndex:indexPath.row];
-//    appDelegate.currentUser = user;
-//    NSLog(@"%@", appDelegate.currentUser.name);
-//    
-//}
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -74,71 +135,29 @@
     }
 }
 
-- (void)configureCell:(UITableViewCell*)cell atIndex:(NSIndexPath*)indexPath {
-    // Get current User
-    User *user = self.users[indexPath.row];
-    cell.textLabel.text = user.name;
-    // Setup AMRatingControl
-    //AMRatingControl *ratingControl;
-    if (![cell viewWithTag:20]) {
-        //ratingControl = [[AMRatingControl alloc] initWithLocation:CGPointMake(190, 10) emptyImage:[UIImage imageNamed:@"beermug-empty"] solidImage:[UIImage imageNamed:@"beermug-full"] andMaxRating:5];
-        //ratingControl.tag = 20;
-        //ratingControl.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
-        //ratingControl.userInteractionEnabled = NO;
-        //[cell addSubview:ratingControl];
-    } else {
-        //ratingControl = (AMRatingControl*)[cell viewWithTag:20];
-    }
-    // Put beer rating in cell
-    //ratingControl.rating = [beer.beerDetails.rating integerValue];
-}
 
 - (void)fetchAllUsers {
-    // 1. Get the sort key
-    //NSString *sortKey = [[NSUserDefaults standardUserDefaults] objectForKey:WB_SORT_KEY];
-    // 2. Determine if it is ascending
-    //BOOL ascending = [sortKey isEqualToString:SORT_KEY_RATING] ? NO : YES;
-    // 3. Fetch entities with MagicalRecord
+    
     self.users = [User findAll];
     NSLog(@"%@",self.users);
     if (self.users.count < 1) {
-        User *newUser = [User createEntity];
-        newUser.name = @"Brian";
         
-        [[NSManagedObjectContext defaultContext] saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
-            if (success) {
-                NSLog(@"You successfully saved your context.");
-            } else if (error) {
-                NSLog(@"Error saving context: %@", error.description);
-            }
-        }];
-        
-        Score *addScore = [Score createEntity];
-        addScore.user = newUser;
-        addScore.mode = @"ADD";
-        addScore.score = [NSNumber numberWithInt:0];
-        
-        Score *subScore = [Score createEntity];
-        subScore.user = newUser;
-        subScore.mode = @"SUB";
-        subScore.score = [NSNumber numberWithInt:0];
-        
-        Score *mulScore = [Score createEntity];
-        mulScore.user = newUser;
-        mulScore.mode = @"MUL";
-        mulScore.score = [NSNumber numberWithInt:0];
-        
-        Score *divScore = [Score createEntity];
-        divScore.user = newUser;
-        divScore.mode = @"DIV";
-        divScore.score = [NSNumber numberWithInt:0];
-        
-        [self fetchAllUsers];
     }
     NSArray *allScores = [Score findAll];
     
     NSLog(@"%@", allScores);
 }
+
+- (void)saveContext {
+    [[NSManagedObjectContext defaultContext] saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
+        if (success) {
+            NSLog(@"You successfully saved your context.");
+        } else if (error) {
+            NSLog(@"Error saving context: %@", error.description);
+        }
+    }];
+}
+
 @end
 
 

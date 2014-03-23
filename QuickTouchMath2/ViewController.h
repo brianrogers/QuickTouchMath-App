@@ -10,6 +10,7 @@
 #import "User.h"
 #import "Score.h"
 #import "AppDelegate.h"
+#import "PlayerCell.h"
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {

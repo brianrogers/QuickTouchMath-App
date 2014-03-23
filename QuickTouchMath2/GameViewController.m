@@ -35,15 +35,20 @@
     NSDictionary *currentConfig = [AppConfig getCurrentConfig];
 	NSLog(@"%@",[currentConfig valueForKey:@"splash_image"]);
     
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.title = [appDelegate.currentUser valueForKey:@"name"];
+
+    
 	//NSArray *contentArray;
 	//NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"questions" ofType:@"plist"];
     
 	//allQuestions = [[NSMutableArray alloc] init];
 	//allQuestions = [NSArray arrayWithContentsOfFile:plistPath];
     
-	self.navigationItem.hidesBackButton = NO;
-	self.navigationController.navigationBarHidden = NO;
-	self.title = @" ";
+	//self.navigationItem.hidesBackButton = NO;
+	//self.navigationController.navigationBarHidden = NO;
+	//self.title = @" ";
+    //self.navigationItem.backBarButtonItem.title = @"Stop";
     
     //self.quizType = @"ADD";
     
@@ -179,7 +184,7 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-	NSLog(@"alert button clicked %d",buttonIndex);
+	NSLog(@"alert button clicked %ld",(long)buttonIndex);
 	switch (buttonIndex) {
 		case 0:
 			NSLog(@"resetting game...");

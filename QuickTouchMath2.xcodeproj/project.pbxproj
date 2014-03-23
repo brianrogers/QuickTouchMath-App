@@ -49,6 +49,8 @@
 		D30730FC18DCF7200071D68B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E316C8BDCB00827B51 /* UIKit.framework */; };
 		D30730FD18DCF7200071D68B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E516C8BDCB00827B51 /* Foundation.framework */; };
 		D30730FE18DCF7200071D68B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E716C8BDCB00827B51 /* CoreGraphics.framework */; };
+		D307310118DCF8E90071D68B /* AddPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D307310018DCF8E90071D68B /* AddPlayerController.m */; };
+		D307310718DD39D20071D68B /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D307310618DD39D20071D68B /* PlayerCell.m */; };
 		D391C8EE16C8BDCB00827B51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D391C8EC16C8BDCB00827B51 /* InfoPlist.strings */; };
 		D391C8F016C8BDCB00827B51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D391C8EF16C8BDCB00827B51 /* main.m */; };
 		D391C8F416C8BDCB00827B51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D391C8F316C8BDCB00827B51 /* AppDelegate.m */; };
@@ -190,6 +192,10 @@
 		D30730F718DBDD350071D68B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		D30730F918DBDD350071D68B /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
 		D30730FA18DBDD350071D68B /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		D30730FF18DCF8E90071D68B /* AddPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPlayerController.h; sourceTree = "<group>"; };
+		D307310018DCF8E90071D68B /* AddPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPlayerController.m; sourceTree = "<group>"; };
+		D307310518DD39D20071D68B /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
+		D307310618DD39D20071D68B /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
 		D391C8E016C8BDCB00827B51 /* QuickTouchMath2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickTouchMath2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D391C8E316C8BDCB00827B51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D391C8E516C8BDCB00827B51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -449,6 +455,10 @@
 				D30730FA18DBDD350071D68B /* Score.m */,
 				D30730F618DBDD350071D68B /* User.h */,
 				D30730F718DBDD350071D68B /* User.m */,
+				D30730FF18DCF8E90071D68B /* AddPlayerController.h */,
+				D307310018DCF8E90071D68B /* AddPlayerController.m */,
+				D307310518DD39D20071D68B /* PlayerCell.h */,
+				D307310618DD39D20071D68B /* PlayerCell.m */,
 			);
 			path = QuickTouchMath2;
 			sourceTree = "<group>";
@@ -688,6 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30730F818DBDD350071D68B /* User.m in Sources */,
+				D307310118DCF8E90071D68B /* AddPlayerController.m in Sources */,
 				D391C8F016C8BDCB00827B51 /* main.m in Sources */,
 				D30730DB18DBD9680071D68B /* NSObject+MagicalDataImport.m in Sources */,
 				D30730E918DBD9680071D68B /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
@@ -714,6 +725,7 @@
 				D3062C8316FD61A3004F746A /* NSMutableArray_Shuffling.m in Sources */,
 				D3062C8416FD61A3004F746A /* QuizData.m in Sources */,
 				D30730DD18DBD9680071D68B /* NSString+MagicalDataImport.m in Sources */,
+				D307310718DD39D20071D68B /* PlayerCell.m in Sources */,
 				D30730ED18DBD9680071D68B /* MagicalRecord+Options.m in Sources */,
 				D30730E118DBD9680071D68B /* NSManagedObject+MagicalRecord.m in Sources */,
 				D30730EA18DBD9680071D68B /* MagicalRecord+Actions.m in Sources */,
@@ -843,14 +855,17 @@
 		D391C91C16C8BDCC00827B51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuickTouchMath2/QuickTouchMath2-Prefix.pch";
 				INFOPLIST_FILE = "QuickTouchMath2/QuickTouchMath2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -858,14 +873,17 @@
 		D391C91D16C8BDCC00827B51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuickTouchMath2/QuickTouchMath2-Prefix.pch";
 				INFOPLIST_FILE = "QuickTouchMath2/QuickTouchMath2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
