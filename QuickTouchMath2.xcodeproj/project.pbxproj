@@ -51,6 +51,11 @@
 		D30730FE18DCF7200071D68B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E716C8BDCB00827B51 /* CoreGraphics.framework */; };
 		D307310118DCF8E90071D68B /* AddPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D307310018DCF8E90071D68B /* AddPlayerController.m */; };
 		D307310718DD39D20071D68B /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D307310618DD39D20071D68B /* PlayerCell.m */; };
+		D307311118DEB7750071D68B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D307310818DEB45A0071D68B /* XCTest.framework */; };
+		D307311218DEB7750071D68B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E516C8BDCB00827B51 /* Foundation.framework */; };
+		D307311318DEB7750071D68B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E316C8BDCB00827B51 /* UIKit.framework */; };
+		D307311918DEB7750071D68B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D307311718DEB7750071D68B /* InfoPlist.strings */; };
+		D307311B18DEB7750071D68B /* QuickTouchMath2_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D307311A18DEB7750071D68B /* QuickTouchMath2_Tests.m */; };
 		D391C8EE16C8BDCB00827B51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D391C8EC16C8BDCB00827B51 /* InfoPlist.strings */; };
 		D391C8F016C8BDCB00827B51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D391C8EF16C8BDCB00827B51 /* main.m */; };
 		D391C8F416C8BDCB00827B51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D391C8F316C8BDCB00827B51 /* AppDelegate.m */; };
@@ -60,10 +65,6 @@
 		D391C8FD16C8BDCB00827B51 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D391C8FB16C8BDCB00827B51 /* MainStoryboard_iPhone.storyboard */; };
 		D391C90016C8BDCC00827B51 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D391C8FE16C8BDCB00827B51 /* MainStoryboard_iPad.storyboard */; };
 		D391C90316C8BDCC00827B51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D391C90216C8BDCC00827B51 /* ViewController.m */; };
-		D391C90C16C8BDCC00827B51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E316C8BDCB00827B51 /* UIKit.framework */; };
-		D391C90D16C8BDCC00827B51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391C8E516C8BDCB00827B51 /* Foundation.framework */; };
-		D391C91516C8BDCC00827B51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D391C91316C8BDCC00827B51 /* InfoPlist.strings */; };
-		D391C91816C8BDCC00827B51 /* QuickTouchMath2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D391C91716C8BDCC00827B51 /* QuickTouchMath2Tests.m */; };
 		D391C92216C8BE8F00827B51 /* infoText.html in Resources */ = {isa = PBXBuildFile; fileRef = D391C92116C8BE8F00827B51 /* infoText.html */; };
 		D391C93E16C9D3C600827B51 /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = D391C92316C9D3C600827B51 /* Icon-iPad.png */; };
 		D391C93F16C9D3C600827B51 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D391C92416C9D3C600827B51 /* config.plist */; };
@@ -107,7 +108,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D391C90E16C8BDCC00827B51 /* PBXContainerItemProxy */ = {
+		D307311D18DEB7750071D68B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D391C8D816C8BDCB00827B51 /* Project object */;
 			proxyType = 1;
@@ -196,6 +197,12 @@
 		D307310018DCF8E90071D68B /* AddPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPlayerController.m; sourceTree = "<group>"; };
 		D307310518DD39D20071D68B /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
 		D307310618DD39D20071D68B /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
+		D307310818DEB45A0071D68B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D307311018DEB7750071D68B /* QuickTouchMath2 Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QuickTouchMath2 Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D307311618DEB7750071D68B /* QuickTouchMath2 Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickTouchMath2 Tests-Info.plist"; sourceTree = "<group>"; };
+		D307311818DEB7750071D68B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D307311A18DEB7750071D68B /* QuickTouchMath2_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickTouchMath2_Tests.m; sourceTree = "<group>"; };
+		D307311C18DEB7750071D68B /* QuickTouchMath2 Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickTouchMath2 Tests-Prefix.pch"; sourceTree = "<group>"; };
 		D391C8E016C8BDCB00827B51 /* QuickTouchMath2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickTouchMath2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D391C8E316C8BDCB00827B51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D391C8E516C8BDCB00827B51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -213,11 +220,6 @@
 		D391C8FF16C8BDCB00827B51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		D391C90116C8BDCC00827B51 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D391C90216C8BDCC00827B51 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D391C90916C8BDCC00827B51 /* QuickTouchMath2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickTouchMath2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D391C91216C8BDCC00827B51 /* QuickTouchMath2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickTouchMath2Tests-Info.plist"; sourceTree = "<group>"; };
-		D391C91416C8BDCC00827B51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D391C91616C8BDCC00827B51 /* QuickTouchMath2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickTouchMath2Tests.h; sourceTree = "<group>"; };
-		D391C91716C8BDCC00827B51 /* QuickTouchMath2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickTouchMath2Tests.m; sourceTree = "<group>"; };
 		D391C92116C8BE8F00827B51 /* infoText.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = infoText.html; sourceTree = "<group>"; };
 		D391C92316C9D3C600827B51 /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
 		D391C92416C9D3C600827B51 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
@@ -262,6 +264,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D307310D18DEB7750071D68B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D307311118DEB7750071D68B /* XCTest.framework in Frameworks */,
+				D307311318DEB7750071D68B /* UIKit.framework in Frameworks */,
+				D307311218DEB7750071D68B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D391C8DD16C8BDCB00827B51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,15 +284,6 @@
 				D30730FD18DCF7200071D68B /* Foundation.framework in Frameworks */,
 				D30730FE18DCF7200071D68B /* CoreGraphics.framework in Frameworks */,
 				D3062C7916FD5FB8004F746A /* AudioToolbox.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D391C90516C8BDCC00827B51 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D391C90C16C8BDCC00827B51 /* UIKit.framework in Frameworks */,
-				D391C90D16C8BDCC00827B51 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +392,25 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		D307311418DEB7750071D68B /* QuickTouchMath2 Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D307311A18DEB7750071D68B /* QuickTouchMath2_Tests.m */,
+				D307311518DEB7750071D68B /* Supporting Files */,
+			);
+			path = "QuickTouchMath2 Tests";
+			sourceTree = "<group>";
+		};
+		D307311518DEB7750071D68B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D307311618DEB7750071D68B /* QuickTouchMath2 Tests-Info.plist */,
+				D307311718DEB7750071D68B /* InfoPlist.strings */,
+				D307311C18DEB7750071D68B /* QuickTouchMath2 Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D391C8D716C8BDCB00827B51 = {
 			isa = PBXGroup;
 			children = (
@@ -398,7 +420,7 @@
 				D391C95C16C9D46E00827B51 /* Icon@2x.png */,
 				D391C95A16C9D3FD00827B51 /* Icon.png */,
 				D391C8E916C8BDCB00827B51 /* QuickTouchMath2 */,
-				D391C91016C8BDCC00827B51 /* QuickTouchMath2Tests */,
+				D307311418DEB7750071D68B /* QuickTouchMath2 Tests */,
 				D391C8E216C8BDCB00827B51 /* Frameworks */,
 				D391C8E116C8BDCB00827B51 /* Products */,
 			);
@@ -408,7 +430,7 @@
 			isa = PBXGroup;
 			children = (
 				D391C8E016C8BDCB00827B51 /* QuickTouchMath2.app */,
-				D391C90916C8BDCC00827B51 /* QuickTouchMath2Tests.xctest */,
+				D307311018DEB7750071D68B /* QuickTouchMath2 Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -416,6 +438,7 @@
 		D391C8E216C8BDCB00827B51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D307310818DEB45A0071D68B /* XCTest.framework */,
 				D30730F118DBDAE10071D68B /* CoreData.framework */,
 				D3062C7A16FD60A3004F746A /* AVFoundation.framework */,
 				D3062C7816FD5FB8004F746A /* AudioToolbox.framework */,
@@ -474,25 +497,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D391C91016C8BDCC00827B51 /* QuickTouchMath2Tests */ = {
-			isa = PBXGroup;
-			children = (
-				D391C91616C8BDCC00827B51 /* QuickTouchMath2Tests.h */,
-				D391C91716C8BDCC00827B51 /* QuickTouchMath2Tests.m */,
-				D391C91116C8BDCC00827B51 /* Supporting Files */,
-			);
-			path = QuickTouchMath2Tests;
-			sourceTree = "<group>";
-		};
-		D391C91116C8BDCC00827B51 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D391C91216C8BDCC00827B51 /* QuickTouchMath2Tests-Info.plist */,
-				D391C91316C8BDCC00827B51 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		D391C95916C9D3D000827B51 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,6 +546,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D307310F18DEB7750071D68B /* QuickTouchMath2 Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D307311F18DEB7760071D68B /* Build configuration list for PBXNativeTarget "QuickTouchMath2 Tests" */;
+			buildPhases = (
+				D307310C18DEB7750071D68B /* Sources */,
+				D307310D18DEB7750071D68B /* Frameworks */,
+				D307310E18DEB7750071D68B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D307311E18DEB7750071D68B /* PBXTargetDependency */,
+			);
+			name = "QuickTouchMath2 Tests";
+			productName = "QuickTouchMath2 Tests";
+			productReference = D307311018DEB7750071D68B /* QuickTouchMath2 Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D391C8DF16C8BDCB00827B51 /* QuickTouchMath2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D391C91B16C8BDCC00827B51 /* Build configuration list for PBXNativeTarget "QuickTouchMath2" */;
@@ -559,25 +581,6 @@
 			productReference = D391C8E016C8BDCB00827B51 /* QuickTouchMath2.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D391C90816C8BDCC00827B51 /* QuickTouchMath2Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D391C91E16C8BDCC00827B51 /* Build configuration list for PBXNativeTarget "QuickTouchMath2Tests" */;
-			buildPhases = (
-				D391C90416C8BDCC00827B51 /* Sources */,
-				D391C90516C8BDCC00827B51 /* Frameworks */,
-				D391C90616C8BDCC00827B51 /* Resources */,
-				D391C90716C8BDCC00827B51 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D391C90F16C8BDCC00827B51 /* PBXTargetDependency */,
-			);
-			name = QuickTouchMath2Tests;
-			productName = QuickTouchMath2Tests;
-			productReference = D391C90916C8BDCC00827B51 /* QuickTouchMath2Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -588,6 +591,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Brian Rogers";
 				TargetAttributes = {
+					D307310F18DEB7750071D68B = {
+						TestTargetID = D391C8DF16C8BDCB00827B51;
+					};
 					D391C8DF16C8BDCB00827B51 = {
 						DevelopmentTeam = BPMC2C9SF7;
 					};
@@ -606,12 +612,20 @@
 			projectRoot = "";
 			targets = (
 				D391C8DF16C8BDCB00827B51 /* QuickTouchMath2 */,
-				D391C90816C8BDCC00827B51 /* QuickTouchMath2Tests */,
+				D307310F18DEB7750071D68B /* QuickTouchMath2 Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D307310E18DEB7750071D68B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D307311918DEB7750071D68B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D391C8DE16C8BDCB00827B51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -666,33 +680,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D391C90616C8BDCC00827B51 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D391C91516C8BDCC00827B51 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		D391C90716C8BDCC00827B51 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXSourcesBuildPhase section */
+		D307310C18DEB7750071D68B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
+				D307311B18DEB7750071D68B /* QuickTouchMath2_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
 		D391C8DC16C8BDCB00827B51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -740,25 +738,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D391C90416C8BDCC00827B51 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D391C91816C8BDCC00827B51 /* QuickTouchMath2Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D391C90F16C8BDCC00827B51 /* PBXTargetDependency */ = {
+		D307311E18DEB7750071D68B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D391C8DF16C8BDCB00827B51 /* QuickTouchMath2 */;
-			targetProxy = D391C90E16C8BDCC00827B51 /* PBXContainerItemProxy */;
+			targetProxy = D307311D18DEB7750071D68B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D307311718DEB7750071D68B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D307311818DEB7750071D68B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		D391C8EC16C8BDCB00827B51 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -783,17 +781,70 @@
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		D391C91316C8BDCC00827B51 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D391C91416C8BDCC00827B51 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D307312018DEB7760071D68B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuickTouchMath2.app/QuickTouchMath2";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickTouchMath2 Tests/QuickTouchMath2 Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "QuickTouchMath2 Tests/QuickTouchMath2 Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D307312118DEB7760071D68B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuickTouchMath2.app/QuickTouchMath2";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickTouchMath2 Tests/QuickTouchMath2 Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "QuickTouchMath2 Tests/QuickTouchMath2 Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		D391C91916C8BDCC00827B51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -859,6 +910,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuickTouchMath2/QuickTouchMath2-Prefix.pch";
 				INFOPLIST_FILE = "QuickTouchMath2/QuickTouchMath2-Info.plist";
@@ -877,6 +932,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuickTouchMath2/QuickTouchMath2-Prefix.pch";
 				INFOPLIST_FILE = "QuickTouchMath2/QuickTouchMath2-Info.plist";
@@ -888,43 +947,17 @@
 			};
 			name = Release;
 		};
-		D391C91F16C8BDCC00827B51 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuickTouchMath2.app/QuickTouchMath2";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\\\"$(SDKROOT)/Developer/Library/Frameworks\\\"",
-					"\\\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\\\"",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QuickTouchMath2/QuickTouchMath2-Prefix.pch";
-				INFOPLIST_FILE = "QuickTouchMath2Tests/QuickTouchMath2Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		D391C92016C8BDCC00827B51 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuickTouchMath2.app/QuickTouchMath2";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\\\"$(SDKROOT)/Developer/Library/Frameworks\\\"",
-					"\\\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\\\"",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QuickTouchMath2/QuickTouchMath2-Prefix.pch";
-				INFOPLIST_FILE = "QuickTouchMath2Tests/QuickTouchMath2Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D307311F18DEB7760071D68B /* Build configuration list for PBXNativeTarget "QuickTouchMath2 Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D307312018DEB7760071D68B /* Debug */,
+				D307312118DEB7760071D68B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D391C8DB16C8BDCB00827B51 /* Build configuration list for PBXProject "QuickTouchMath2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -939,15 +972,6 @@
 			buildConfigurations = (
 				D391C91C16C8BDCC00827B51 /* Debug */,
 				D391C91D16C8BDCC00827B51 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D391C91E16C8BDCC00827B51 /* Build configuration list for PBXNativeTarget "QuickTouchMath2Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D391C91F16C8BDCC00827B51 /* Debug */,
-				D391C92016C8BDCC00827B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

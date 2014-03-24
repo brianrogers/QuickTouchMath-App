@@ -33,8 +33,18 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D391C90816C8BDCC00827B51"
-               BuildableName = "QuickTouchMath2Tests.octest"
+               BuildableName = "QuickTouchMath2Tests.xctest"
                BlueprintName = "QuickTouchMath2Tests"
+               ReferencedContainer = "container:QuickTouchMath2.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D307310F18DEB7750071D68B"
+               BuildableName = "QuickTouchMath2 Tests.xctest"
+               BlueprintName = "QuickTouchMath2 Tests"
                ReferencedContainer = "container:QuickTouchMath2.xcodeproj">
             </BuildableReference>
          </TestableReference>
