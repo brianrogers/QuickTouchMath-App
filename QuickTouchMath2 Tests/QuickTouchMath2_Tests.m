@@ -45,4 +45,9 @@
     
 }
 
+- (void)testEasyLevelQuestions
+{
+    [QuizData getAdditionQuestionsEasyLevel];
+}
+
 @end

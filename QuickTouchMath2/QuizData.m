@@ -19,6 +19,24 @@
 	return [allQuestionsDict valueForKey:@"add"];
 }
 
++(NSArray *) getAdditionQuestionsEasyLevel
+{
+    NSArray *includeList = @[@"0",@"1",@"2",@"3"];
+    NSArray *allQuestions = [[self getAdditionQuestions] copy];
+    NSMutableArray *questionsToReturn = [[NSMutableArray alloc] init];
+    
+    for (NSArray *item in allQuestions) {
+        for (NSString *num in includeList) {
+            if ([[item objectAtIndex:0] hasPrefix:[NSString stringWithFormat:@"%@+",num]] || [[item objectAtIndex:0] hasSuffix:[NSString stringWithFormat:@"+%@",num]]) {
+                NSLog(@"%@", [item objectAtIndex:0]);
+                [questionsToReturn addObject:item];
+            }
+        }
+        
+    }
+    return [questionsToReturn copy];
+}
+
 +(NSArray *) getSubtractionQuestions
 {
 	NSLog(@"getSubtractionQuestions");

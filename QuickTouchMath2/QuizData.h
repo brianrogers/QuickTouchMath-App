@@ -14,6 +14,7 @@
 }
 
 +(NSArray *)getAdditionQuestions;
++(NSArray *) getAdditionQuestionsEasyLevel;
 +(NSArray *)getSubtractionQuestions;
 +(NSArray *)getMultiplicationQuestions;
 +(NSArray *)getDivisionQuestions;
